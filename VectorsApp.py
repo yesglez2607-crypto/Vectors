@@ -13,6 +13,7 @@ Bx = B_mag*np.cos(2.0*np.pi*B_theta/360.0)
 By = B_mag*np.sin(2.0*np.pi*B_theta/360.0)
 Cx = Ax + Bx
 Cy = Ay + By
+C_mag = sqrt(Cx*Cx+Cy*Cy)
 #st.write(Ax,Ay)
 #x = np.linspace(-10,10,100,dtype=float)
 #y = np.sin(x)
@@ -20,14 +21,16 @@ Cy = Ay + By
 fig = plt.figure()
 ax = fig.add_subplot(1,1,1)
 #
-ax.arrow(0,0,Ax,Ay,width=0.1,color='red',length_includes_head=True)
-ax.arrow(Ax,Ay,Bx,By,width=0.1,color='blue',length_includes_head=True)
-ax.arrow(0,0,Cx,Cy,width=0.1,color='green',length_includes_head=True)
-ax.grid()
 xmax = max(abs(Ax),abs(Ax+Bx))+max(abs(Ax),abs(Ax+Bx))*0.3
 xmin = -xmax
 ymax = max(abs(Ay),abs(Ay+By))+max(abs(Ay),abs(Ay+By))*0.3
 ymin = -ymax
+
+ax.arrow(0,0,Ax,Ay,width=abs(xmax)*0.01,color='red',length_includes_head=True)
+ax.arrow(Ax,Ay,Bx,By,width=abs(xmax)*0.01,color='blue',length_includes_head=True)
+ax.arrow(0,0,Cx,Cy,width=abs(xmax)*0.01,color='green',length_includes_head=True)
+ax.grid()
+
 st.write("xmin = ",xmin, " xmax = ",xmax)
 st.write("ymin = ",ymin, " ymax = ",ymax)
 st.write(Ax,Ax+Bx,abs(Ax),abs(Ax+Bx))

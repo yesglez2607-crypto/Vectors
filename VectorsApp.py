@@ -22,9 +22,9 @@ ax.arrow(0,0,Ax,Ay,width=0.1,color='red',length_includes_head=True)
 ax.arrow(Ax,Ay,Bx,By,width=0.1,color='blue',length_includes_head=True)
 ax.arrow(0,0,Cx,Cy,width=0.1,color='green',length_includes_head=True)
 ax.grid()
-xmax = max(abs(Ax),abs(Ax+Bx))+max(abs(Ax),abs(Ax+Bx))*0.1
+xmax = max(abs(Ax),abs(Ax+Bx))+max(abs(Ax),abs(Ax+Bx))*0.3
 xmin = -xmax
-ymax = max(abs(Ay),abs(Ay+By))+max(abs(Ay),abs(Ay+By))*0.1
+ymax = max(abs(Ay),abs(Ay+By))+max(abs(Ay),abs(Ay+By))*0.3
 ymin = -ymax
 st.write("xmin = ",xmin, " xmax = ",xmax)
 st.write("ymin = ",ymin, " ymax = ",ymax)

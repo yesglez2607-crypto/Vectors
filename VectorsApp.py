@@ -23,7 +23,7 @@ xmax = max(abs(Ax),abs(Ax+Bx))
 st.write(Ax,abs(Ax),Ax+Bx,abs(Ax+Bx))
 xmin = -xmax
 ymax = max(abs(Ay),abs(Ay+By))
-xmin = -xmax
+ymin = -ymax
 ax.set(xlim=(xmin, xmax), ylim=(ymin, ymax))
 #ax.plot(x,y)
 st.pyplot(fig)

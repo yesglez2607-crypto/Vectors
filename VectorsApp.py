@@ -36,7 +36,7 @@ ax.arrow(0,0,Ax,Ay,width=abs(xmax)*0.01,color='red',length_includes_head=True,an
 ax.arrow(Ax,Ay,Bx,By,width=abs(xmax)*0.01,color='blue',length_includes_head=True,animated=True)
 ax.arrow(0,0,Cx,Cy,width=abs(xmax)*0.01,color='green',length_includes_head=True,animated=True)
 ax.grid()
-plt.text(Ax/2.0, Ay/2, "A", size=np.int(abs(xmax)), rotation=A_theta,ha="center", va="center",)
+plt.text(Ax/2.0, Ay/2, "A", size=np.int(abs(xmax)*1.5), rotation=A_theta,ha="center", va="center",)
 
 #st.write("xmin = ",xmin, " xmax = ",xmax)
 #st.write("ymin = ",ymin, " ymax = ",ymax)

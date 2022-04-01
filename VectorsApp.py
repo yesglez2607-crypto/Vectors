@@ -9,7 +9,7 @@ A_theta = st.slider('Dirección del vector A', 0.0, 360.0, 10.0)
 B_theta = st.slider('Dirección del vector B', 0.0, 360.0, 45.0)
 Ax = A_mag*cos(np.pi*A_theta/180.0)
 Ay = A_mag*sin(np.pi*A_theta/180.0)
-
+st.write(Ax,Ay)
 #x = np.linspace(-10,10,100,dtype=float)
 #y = np.sin(x)
 fig, ax = plt.subplots()

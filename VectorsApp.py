@@ -20,10 +20,11 @@ ax.arrow(0,0,Ax,Ay,width=0.1,color='red')
 ax.arrow(Ax,Ay,Ax+Bx,Ay+By,width=0.1,color='blue')
 ax.grid()
 xmax = max(abs(Ax),abs(Ax+Bx))+max(abs(Ax),abs(Ax+Bx))*0.1
-st.write(Ax,abs(Ax),Ax+Bx,abs(Ax+Bx))
 xmin = -xmax
 ymax = max(abs(Ay),abs(Ay+By))+max(abs(Ay),abs(Ay+By))*0.1
 ymin = -ymax
+st.write("xmin = ",xmin, " xmax = ",xmax)
+st.write("ymin = ",ymin, " ymax = ",ymax")
 ax.set(xlim=(xmin, xmax), ylim=(ymin, ymax))
 #ax.plot(x,y)
 st.pyplot(fig)

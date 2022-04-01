@@ -4,24 +4,17 @@ import numpy as np
 st.title("App para suma de vectores")
 st.markdown("Elige la magnitud y dirección de los vectores $ \overrightarrow{A} $ y $ \overrightarrow{B} $ ")
 
-
-A_mag = st.slider('Magnitud del vector A', 0.0, 10.0, 1.0,step=0.1)
-B_mag = st.slider('Magnitud del vector B', 0.0, 10.0, 2.0,step=0.1)
-A_theta = st.slider('Dirección del vector A', 0.0, 360.0, 10.0)
-B_theta = st.slider('Dirección del vector B', 0.0, 360.0, 45.0)
-
-
 with st.sidebar:
-    Ax = A_mag*np.cos(2.0*np.pi*A_theta/360.0)
-    Ay = A_mag*np.sin(2.0*np.pi*A_theta/360.0)
-    Bx = B_mag*np.cos(2.0*np.pi*B_theta/360.0)
-    By = B_mag*np.sin(2.0*np.pi*B_theta/360.0)
-    
+    A_mag = st.slider('Magnitud del vector A', 0.0, 10.0, 1.0,step=0.1)
+    B_mag = st.slider('Magnitud del vector B', 0.0, 10.0, 2.0,step=0.1)
+    A_theta = st.slider('Dirección del vector A', 0.0, 360.0, 10.0)
+    B_theta = st.slider('Dirección del vector B', 0.0, 360.0, 45.0)
 
-#Ax = A_mag*np.cos(2.0*np.pi*A_theta/360.0)
-#Ay = A_mag*np.sin(2.0*np.pi*A_theta/360.0)
-#Bx = B_mag*np.cos(2.0*np.pi*B_theta/360.0)
-#By = B_mag*np.sin(2.0*np.pi*B_theta/360.0)
+
+Ax = A_mag*np.cos(2.0*np.pi*A_theta/360.0)
+Ay = A_mag*np.sin(2.0*np.pi*A_theta/360.0)
+Bx = B_mag*np.cos(2.0*np.pi*B_theta/360.0)
+By = B_mag*np.sin(2.0*np.pi*B_theta/360.0)
 Cx = Ax + Bx
 Cy = Ay + By
 C_mag = np.sqrt(Cx*Cx+Cy*Cy)

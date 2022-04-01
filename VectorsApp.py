@@ -32,7 +32,7 @@ ymax = max(abs(Ay),abs(Ay+By))+max(abs(Ay),abs(Ay+By))*0.3
 ymin = -ymax
 
 
-ax.arrow1(0,0,Ax,Ay,width=abs(xmax)*0.01,color='red',length_includes_head=True,animated=True)
+ax.arrow(0,0,Ax,Ay,width=abs(xmax)*0.01,color='red',length_includes_head=True,animated=True)
 ax.arrow(Ax,Ay,Bx,By,width=abs(xmax)*0.01,color='blue',length_includes_head=True,animated=True)
 ax.arrow(0,0,Cx,Cy,width=abs(xmax)*0.01,color='green',length_includes_head=True,animated=True)
 ax.grid()

@@ -19,9 +19,9 @@ fig, ax = plt.subplots()
 ax.arrow(0,0,Ax,Ay,width=0.1,color='red')
 ax.arrow(Ax,Ay,Ax+Bx,Ay+By,width=0.1,color='blue')
 ax.grid()
-xmin = -10.0
+xmin = -15.0
 xmax = -xmin
-ymin = -10.0
+ymin = -15.0
 ymax = -xmin
 
 ax.set(xlim=(xmin, xmax), ylim=(ymin, ymax))

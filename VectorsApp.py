@@ -13,6 +13,7 @@ Ay = A_mag*sin(np.pi*A_theta/180.0)
 #x = np.linspace(-10,10,100,dtype=float)
 #y = np.sin(x)
 fig, ax = plt.subplots()
-#ax.plot(x,y)
+#
 ax.arrow(0,0,Ax,Ay,width=0.2)
+ax.plot(x,y)
 st.pyplot(fig)

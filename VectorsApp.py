@@ -30,8 +30,10 @@ xmax = max(abs(Ax),abs(Ax+Bx))+max(abs(Ax),abs(Ax+Bx))*0.3
 xmin = -xmax
 ymax = max(abs(Ay),abs(Ay+By))+max(abs(Ay),abs(Ay+By))*0.3
 ymin = -ymax
-arrow1=mpatches.FancyArrow(0,0,Ax,Ay,width=abs(xmax)*0.01,color='red',length_includes_head=True,animated=True)
 
+#arrow1=mpatches.FancyArrow(0,0,Ax,Ay,width=abs(xmax)*0.01,color='red',length_includes_head=True,animated=True)
+arrow1 = mpatches.FancyArrowPatch((0.0,0.0), (Ax,Ay),mutation_scale=100,transform=ax[1].transAxes)
+ax[1].add_patch(arrow1)
 ax.arrow1()#0,0,Ax,Ay,width=abs(xmax)*0.01,color='red',length_includes_head=True,animated=True)
 ax.arrow(Ax,Ay,Bx,By,width=abs(xmax)*0.01,color='blue',length_includes_head=True,animated=True)
 ax.arrow(0,0,Cx,Cy,width=abs(xmax)*0.01,color='green',length_includes_head=True,animated=True)

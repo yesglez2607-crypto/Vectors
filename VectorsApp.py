@@ -1,5 +1,6 @@
 import streamlit as st
 import matplotlib.pyplot as plt
+import numpy as np
 st.title("App para suma de vectores")
 st.markdown("Elige la magnitud y dirección de los vectores $ \overrightarrow{A} $ y $ \overrightarrow{B} $ ")
 Ax = st.slider('Magnitud del vector A', 0.0, 10.0, 1.0,step=0.1)

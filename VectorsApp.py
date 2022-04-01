@@ -11,13 +11,16 @@ Ax = A_mag*np.cos(np.pi*A_theta/180.0)
 Ay = A_mag*np.sin(np.pi*A_theta/180.0)
 Bx = B_mag*np.cos(np.pi*B_theta/180.0)
 By = B_mag*np.sin(np.pi*B_theta/180.0)
+Cx = Ax + Bx
+Cy = Ay + By
 #st.write(Ax,Ay)
 #x = np.linspace(-10,10,100,dtype=float)
 #y = np.sin(x)
 fig, ax = plt.subplots()
 #
 ax.arrow(0,0,Ax,Ay,width=0.1,color='red')
-ax.arrow(Ax,Ay,Ax+Bx,Ay+By,width=0.1,color='blue')
+ax.arrow(Ax,Ay,Cx,Cy,width=0.1,color='blue')
+ax.arrow(0,0,Cx,Cy,width=0.1,color='green')
 ax.grid()
 xmax = max(abs(Ax),abs(Ax+Bx))+max(abs(Ax),abs(Ax+Bx))*0.1
 xmin = -xmax
@@ -27,7 +30,7 @@ st.write("xmin = ",xmin, " xmax = ",xmax)
 st.write("ymin = ",ymin, " ymax = ",ymax)
 st.write(Ax,Ax+Bx,abs(Ax),abs(Ax+Bx))
 st.write(Ay,Ay+By,abs(Ay),abs(Ay+By))
-
+st.write(Cx,Cy)
 ax.set(xlim=(xmin, xmax), ylim=(ymin, ymax))
 #ax.plot(x,y)
 st.pyplot(fig)

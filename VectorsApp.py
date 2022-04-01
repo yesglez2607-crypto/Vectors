@@ -16,7 +16,9 @@ Cy = Ay + By
 #st.write(Ax,Ay)
 #x = np.linspace(-10,10,100,dtype=float)
 #y = np.sin(x)
-fig, ax = plt.subplots()
+#fig, ax = plt.subplots()
+fig = plt.figure()
+ax = fig.add_subplot(1,1,1)
 #
 ax.arrow(0,0,Ax,Ay,width=0.1,color='red',length_includes_head=True)
 ax.arrow(Ax,Ay,Bx,By,width=0.1,color='blue',length_includes_head=True)

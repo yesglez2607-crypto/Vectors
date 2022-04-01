@@ -20,6 +20,7 @@ ax.arrow(0,0,Ax,Ay,width=0.1,color='red')
 ax.arrow(Ax,Ay,Ax+Bx,Ay+By,width=0.1,color='blue')
 ax.grid()
 xmax = max(abs(Ax),abs(Ax+Bx))
+st.write(Ax,abs(Ax),Ax+Bx,abs(Ax+Bx))
 xmin = -xmax
 ymin = xmin
 ymax = xmax

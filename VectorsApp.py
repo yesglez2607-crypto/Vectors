@@ -16,7 +16,7 @@ with st.sidebar:
     Ay = A_mag*np.sin(2.0*np.pi*A_theta/360.0)
     Bx = B_mag*np.cos(2.0*np.pi*B_theta/360.0)
     By = B_mag*np.sin(2.0*np.pi*B_theta/360.0)
-    )
+    
 
 #Ax = A_mag*np.cos(2.0*np.pi*A_theta/360.0)
 #Ay = A_mag*np.sin(2.0*np.pi*A_theta/360.0)

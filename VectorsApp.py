@@ -16,8 +16,8 @@ By = B_mag*np.sin(np.pi*B_theta/180.0)
 #y = np.sin(x)
 fig, ax = plt.subplots()
 #
-ax.arrow(0,0,Ax,Ay,width=0.2)
-ax.arrow(Ax,Ay,Ax+Bx,Ay+By,width=0.2)
+ax.arrow(0,0,Ax,Ay,width=0.1,color='red')
+ax.arrow(Ax,Ay,Ax+Bx,Ay+By,width=0.1,color='blue')
 
 #ax.plot(x,y)
 st.pyplot(fig)

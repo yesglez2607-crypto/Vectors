@@ -22,8 +22,8 @@ ax.grid()
 xmax = max(abs(Ax),abs(Ax+Bx))
 st.write(Ax,abs(Ax),Ax+Bx,abs(Ax+Bx))
 xmin = -xmax
-ymin = xmin
-ymax = xmax
+ymax = max(abs(Ay),abs(Ay+By))
+xmin = -xmax
 ax.set(xlim=(xmin, xmax), ylim=(ymin, ymax))
 #ax.plot(x,y)
 st.pyplot(fig)

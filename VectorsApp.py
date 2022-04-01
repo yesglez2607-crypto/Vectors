@@ -18,6 +18,6 @@ fig, ax = plt.subplots()
 #
 ax.arrow(0,0,Ax,Ay,width=0.1,color='red')
 ax.arrow(Ax,Ay,Ax+Bx,Ay+By,width=0.1,color='blue')
-
+ax.grid()
 #ax.plot(x,y)
 st.pyplot(fig)

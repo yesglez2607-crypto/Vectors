@@ -19,11 +19,10 @@ fig, ax = plt.subplots()
 ax.arrow(0,0,Ax,Ay,width=0.1,color='red')
 ax.arrow(Ax,Ay,Ax+Bx,Ay+By,width=0.1,color='blue')
 ax.grid()
-xmin = -15.0
-xmax = -xmin
-ymin = -15.0
-ymax = -xmin
-
+xmax = np.max(np.abs(Ax),np.abs(Ax+Bx))
+#xmin = -xmax
+ymin = xmin
+ymax = xmax
 ax.set(xlim=(xmin, xmax), ylim=(ymin, ymax))
 #ax.plot(x,y)
 st.pyplot(fig)

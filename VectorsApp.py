@@ -20,7 +20,7 @@ ax.arrow(0,0,Ax,Ay,width=0.1,color='red')
 ax.arrow(Ax,Ay,Ax+Bx,Ay+By,width=0.1,color='blue')
 ax.grid()
 xmax = max(np.absolute(Ax),np.absolute(Ax+Bx))
-#xmin = -xmax
+xmin = -xmax
 ymin = xmin
 ymax = xmax
 ax.set(xlim=(xmin, xmax), ylim=(ymin, ymax))

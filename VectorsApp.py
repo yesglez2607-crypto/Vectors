@@ -24,7 +24,7 @@ xmin = -xmax
 ymax = max(abs(Ay),abs(Ay+By))+max(abs(Ay),abs(Ay+By))*0.1
 ymin = -ymax
 st.write("xmin = ",xmin, " xmax = ",xmax)
-st.write("ymin = ",ymin, " ymax = ",ymax")
+st.write("ymin = ",ymin, " ymax = ",ymax)
 ax.set(xlim=(xmin, xmax), ylim=(ymin, ymax))
 #ax.plot(x,y)
 st.pyplot(fig)

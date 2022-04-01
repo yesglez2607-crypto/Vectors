@@ -13,7 +13,7 @@ Bx = B_mag*np.cos(2.0*np.pi*B_theta/360.0)
 By = B_mag*np.sin(2.0*np.pi*B_theta/360.0)
 Cx = Ax + Bx
 Cy = Ay + By
-C_mag = sqrt(Cx*Cx+Cy*Cy)
+C_mag = np.sqrt(Cx*Cx+Cy*Cy)
 #st.write(Ax,Ay)
 #x = np.linspace(-10,10,100,dtype=float)
 #y = np.sin(x)

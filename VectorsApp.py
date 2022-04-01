@@ -34,7 +34,7 @@ ax.arrow(0,0,Ax,Ay,width=abs(xmax)*0.01,color='red',length_includes_head=True,an
 ax.arrow(Ax,Ay,Bx,By,width=abs(xmax)*0.01,color='blue',length_includes_head=True,animated=True)
 ax.arrow(0,0,Cx,Cy,width=abs(xmax)*0.01,color='green',length_includes_head=True,animated=True)
 ax.grid()
-ax.annotate("", xy=(0.5, 0.5), xytext=(0, 0),arrowprops=dict(arrowstyle="->"))
+
 
 #st.write("xmin = ",xmin, " xmax = ",xmax)
 #st.write("ymin = ",ymin, " ymax = ",ymax)

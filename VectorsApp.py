@@ -19,7 +19,7 @@ Cy = Ay + By
 fig, ax = plt.subplots()
 #
 ax.arrow(0,0,Ax,Ay,width=0.1,color='red',length_includes_head=True)
-ax.arrow(Ax,Ay,Cx,Cy,width=0.1,color='blue',length_includes_head=True)
+ax.arrow(Ax,Ay,Bx,By,width=0.1,color='blue',length_includes_head=True)
 ax.arrow(0,0,Cx,Cy,width=0.1,color='green',length_includes_head=True)
 ax.grid()
 xmax = max(abs(Ax),abs(Ax+Bx))+max(abs(Ax),abs(Ax+Bx))*0.1

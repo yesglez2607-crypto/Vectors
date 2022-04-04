@@ -37,8 +37,8 @@ head_w = 20.0*width_l
 
 ax.arrow(0,0,Ax,Ay,width=width_l,color='red',length_includes_head=True,animated=True,head_width=head_w)
 ax.arrow(Ax,Ay,Bx,By,width=width_l,color='blue',length_includes_head=True,animated=True,head_width=head_w)
-ax.arrow(0,0,Cx,Cy,width=width_l,color='green',length_includes_head=True,animated=True,head_width=head_w)
-ax.grid()
+ax.arrow(0,0,Cx,Cy,width=width_l,color='orange',length_includes_head=True,animated=True,head_width=head_w)
+ax.grid(color='green', linestyle='-', linewidth=2)
 
 ax.set(xlim=(-le, le), ylim=(-le, le))
 st.pyplot(fig)

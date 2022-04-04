@@ -34,8 +34,8 @@ ymin = -ymax
 width_l = max(xmax,ymax)*0.001
 le = max(xmax,ymax)
 head_w = 20.0*width_l
-axhline(0,color='black') # x = 0
-axvline(0,color='black') # y = 0
+ax.axhline(0,color='black') # x = 0
+ax.axvline(0,color='black') # y = 0
 
 ax.arrow(0,0,Ax,Ay,width=width_l,color='red',length_includes_head=True,animated=True,head_width=head_w)
 ax.arrow(Ax,Ay,Bx,By,width=width_l,color='blue',length_includes_head=True,animated=True,head_width=head_w)

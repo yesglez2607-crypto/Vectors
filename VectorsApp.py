@@ -32,11 +32,12 @@ xmin = -xmax
 ymax = max(abs(Ay),abs(Cy))+max(abs(Ay),abs(Cy))*0.3
 ymin = -ymax
 width_l = max(xmax,ymax)*0.01
+le = max(xmax,ymax)
 
 ax.arrow(0,0,Ax,Ay,width=width_l,color='red',length_includes_head=True,animated=True)
 ax.arrow(Ax,Ay,Bx,By,width=width_l,color='blue',length_includes_head=True,animated=True)
 ax.arrow(0,0,Cx,Cy,width=width_l,color='green',length_includes_head=True,animated=True)
 ax.grid()
 
-ax.set(xlim=(xmin, xmax), ylim=(ymin, ymax))
+ax.set(xlim=(-le, le), ylim=(-le, le))
 st.pyplot(fig)

@@ -31,7 +31,7 @@ xmax = max(abs(Ax),abs(Cx))+max(abs(Ax),abs(Cx))*0.3
 xmin = -xmax
 ymax = max(abs(Ay),abs(Cy))+max(abs(Ay),abs(Cy))*0.3
 ymin = -ymax
-width_l = max(xmax,ymax)*0.01
+width_l = max(xmax,ymax)*0.001
 le = max(xmax,ymax)
 
 ax.arrow(0,0,Ax,Ay,width=width_l,color='red',length_includes_head=True,animated=True)

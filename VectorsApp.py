@@ -27,12 +27,13 @@ C_mag = np.sqrt(Cx*Cx+Cy*Cy)
 fig = plt.figure()
 ax = fig.add_subplot(1,1,1)
 
-xmax = max(abs(Ax),abs(Cx))+max(abs(Ax),abs(Cx))*0.3
-xmin = -xmax
-ymax = max(abs(Ay),abs(Cy))+max(abs(Ay),abs(Cy))*0.3
-ymin = -ymax
-width_l = max(xmax,ymax)*0.01
-le = max(xmax,ymax)
+#xmax = max(abs(Ax),abs(Cx))+max(abs(Ax),abs(Cx))*0.3
+#xmin = -xmax
+#ymax = max(abs(Ay),abs(Cy))+max(abs(Ay),abs(Cy))*0.3
+#ymin = -ymax
+
+width_l = max(abs(Cx),abs(Cy))*0.01
+le = max(abs(Cx),abs(Cy))+max(abs(Cx),abs(Cy))*0.3
 
 ax.arrow(0,0,Ax,Ay,width=width_l,color='red',length_includes_head=True,animated=True)
 ax.arrow(Ax,Ay,Bx,By,width=width_l,color='blue',length_includes_head=True,animated=True)

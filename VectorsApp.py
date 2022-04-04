@@ -33,10 +33,11 @@ ymax = max(abs(Ay),abs(Cy))+max(abs(Ay),abs(Cy))*0.3
 ymin = -ymax
 width_l = max(xmax,ymax)*0.001
 le = max(xmax,ymax)
+head_w = 6.0*width_l
 
-ax.arrow(0,0,Ax,Ay,width=width_l,color='red',length_includes_head=True,animated=True,head_width=0.2)
-ax.arrow(Ax,Ay,Bx,By,width=width_l,color='blue',length_includes_head=True,animated=True,head_width=0.2)
-ax.arrow(0,0,Cx,Cy,width=width_l,color='green',length_includes_head=True,animated=True,head_width=0.2)
+ax.arrow(0,0,Ax,Ay,width=width_l,color='red',length_includes_head=True,animated=True,head_width=head_w)
+ax.arrow(Ax,Ay,Bx,By,width=width_l,color='blue',length_includes_head=True,animated=True,head_width=head_w)
+ax.arrow(0,0,Cx,Cy,width=width_l,color='green',length_includes_head=True,animated=True,head_width=head_w)
 ax.grid()
 
 ax.set(xlim=(-le, le), ylim=(-le, le))

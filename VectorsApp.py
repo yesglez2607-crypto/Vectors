@@ -6,7 +6,8 @@ st.title("App para suma de vectores")
 
 with st.sidebar:
     st.markdown("Elige la magnitud y dirección de los vectores $ \overrightarrow{A} $ y $ \overrightarrow{B} $ ")
-    A_mag = st.slider('Magnitud del vector A', 0.0, 10.0, 1.0,step=0.1)
+    #A_mag = st.slider('Magnitud del vector A', 0.0, 10.0, 1.0,step=0.1)
+    A_mag = st.number_input("pon un número",3)
     B_mag = st.slider('Magnitud del vector B', 0.0, 10.0, 2.0,step=0.1)
     A_theta = st.slider('Dirección del vector A', 0.0, 360.0, 10.0)
     B_theta = st.slider('Dirección del vector B', 0.0, 360.0, 45.0)

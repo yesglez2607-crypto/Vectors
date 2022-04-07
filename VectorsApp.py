@@ -7,10 +7,11 @@ st.title("App para suma de vectores")
 with st.sidebar:
     st.markdown("Elige la magnitud y dirección de los vectores $ \overrightarrow{A} $ y $ \overrightarrow{B} $ ")
     #A_mag = st.slider('Magnitud del vector A', 0.0, 10.0, 1.0,step=0.1)
-    A_mag = st.number_input("pon un número",0)
-    B_mag = st.number_input("pon un número",0)
-    A_theta = st.number_input("pon un número",0)
-    B_theta= st.number_input("pon un número",0)
+    A_mag = st.number_input("pon un número A",0)
+    B_mag = st.number_input("pon un número B",0)
+    A_theta = st.number_input("pon un ángulo A",0)
+    B_theta= st.number_input("pon un ángulo B",0)
+
     #B_mag = st.slider('Magnitud del vector B', 0.0, 10.0, 2.0,step=0.1)
    # A_theta = st.slider('Dirección del vector A', 0.0, 360.0, 10.0)
   #  B_theta = st.slider('Dirección del vector B', 0.0, 360.0, 45.0)
@@ -40,6 +41,7 @@ le = max(xmax,ymax)
 head_w = 20.0*width_l
 ax.axhline(0,color='black') # x = 0
 ax.axvline(0,color='black') # y = 0
+
 
 ax.arrow(0,0,Ax,Ay,width=width_l,color='red',length_includes_head=True,animated=True,head_width=head_w)
 ax.arrow(Ax,Ay,Bx,By,width=width_l,color='blue',length_includes_head=True,animated=True,head_width=head_w)

@@ -5,36 +5,42 @@ import numpy as np
 st.title("App para suma de vectores")
 
 with st.sidebar:
-    st.markdown("Elige la magnitud y dirección de los vectores $ \overrightarrow{A} $ y $ \overrightarrow{B} $ ")
+    st.markdown("Elige la magnitud del vector $ \overrightarrow{F_1}$ ")
+    F1_mag = st.number_input("magnitud",0.000)
+    st.markdown("Elige la magnitud y dirección del vector $ \overrightarrow{F_2} $")
     #A_mag = st.slider('Magnitud del vector A', 0.0, 10.0, 1.0,step=0.1)
-    A_mag = st.number_input("pon un número A",0.0)
-    B_mag = st.number_input("pon un número B",0.0)
-    A_theta = st.number_input("pon un ángulo A",0.0)
-    B_theta= st.number_input("pon un ángulo B",0.0)
-
+    F2_mag = st.number_input("magnitud",0.000)
+    F2_theta = st.number_input("ángulo",0.000) 
+    st.markdown("Elige la magnitud y dirección del vector $ \overrightarrow{F_3} $")
+    #A_mag = st.slider('Magnitud del vector A', 0.0, 10.0, 1.0,step=0.1)
+    F3_mag = st.number_input("magnitud",0.000)
+    F3_theta = st.number_input("ángulo",0.000)
+    #B_mag = st.number_input("",0.0)    
+    #B_theta= st.number_input("pon un ángulo B",0.000)
     #B_mag = st.slider('Magnitud del vector B', 0.0, 10.0, 2.0,step=0.1)
-   # A_theta = st.slider('Dirección del vector A', 0.0, 360.0, 10.0)
-  #  B_theta = st.slider('Dirección del vector B', 0.0, 360.0, 45.0)
+    # A_theta = st.slider('Dirección del vector A', 0.0, 360.0, 10.0)
+    #  B_theta = st.slider('Dirección del vector B', 0.0, 360.0, 45.0)
 
 deg2rad = 2.0*np.pi/360.0
-A_theta_rad = deg2rad*A_theta
-B_theta_rad = deg2rad*B_theta
+F3_theta_rad = deg2rad*F2_theta
+F3_theta_rad = deg2rad*F3_theta
 
-Ax = A_mag*np.cos(A_theta_rad)
-Ay = A_mag*np.sin(A_theta_rad)
-Bx = B_mag*np.cos(B_theta_rad)
-By = B_mag*np.sin(B_theta_rad)
+F1x = F1_mag
+F2x = F2_mag*np.cos(F2_theta_rad)
+F2y = F2_mag*np.sin(F2_theta_rad)
+F3x = F3_mag*np.cos(F3_theta_rad)
+F3y = F3_mag*np.sin(F3_theta_rad)
 
-Cx = Ax + Bx
-Cy = Ay + By
-C_mag = np.sqrt(Cx*Cx+Cy*Cy)
+FRx = F2x + F3x
+FRy = F2y + F3y
+FR_mag = np.sqrt(FRx*FRx+FRy*FRy)
 
 fig = plt.figure()
 ax = fig.add_subplot(1,1,1)
 
-xmax = max(abs(Ax),abs(Cx))+max(abs(Ax),abs(Cx))*0.3
+xmax = max(abs(F2x),abs(FRx))+max(abs(F2x),abs(FRx))*0.3
 xmin = -xmax
-ymax = max(abs(Ay),abs(Cy))+max(abs(Ay),abs(Cy))*0.3
+ymax = max(abs(F2y),abs(FRy))+max(abs(F2y),abs(FRy))*0.3
 ymin = -ymax
 width_l = max(xmax,ymax)*0.001
 le = max(xmax,ymax)
@@ -43,9 +49,10 @@ ax.axhline(0,color='black') # x = 0
 ax.axvline(0,color='black') # y = 0
 
 
-ax.arrow(0,0,Ax,Ay,width=width_l,color='red',length_includes_head=True,animated=True,head_width=head_w)
-ax.arrow(Ax,Ay,Bx,By,width=width_l,color='blue',length_includes_head=True,animated=True,head_width=head_w)
-ax.arrow(0,0,Cx,Cy,width=width_l*10,color='darkorange',length_includes_head=True,animated=True,head_width=head_w)
+ax.arrow(0,0,F1x,0.0,width=width_l,color='purple',length_includes_head=True,animated=True,head_width=head_w)
+ax.arrow(0,0,F2x,F2y,width=width_l,color='red',length_includes_head=True,animated=True,head_width=head_w)
+ax.arrow(F2x,F2y,F3x,F3y,width=width_l,color='blue',length_includes_head=True,animated=True,head_width=head_w)
+ax.arrow(0,0,FRx,FRy,width=width_l*10,color='darkorange',length_includes_head=True,animated=True,head_width=head_w)
 ax.grid(color='green', linestyle='-.', linewidth=0.2)
 st.write("componentes: ",Cx,Cy)
 ax.set(xlim=(-le, le), ylim=(-le, le))

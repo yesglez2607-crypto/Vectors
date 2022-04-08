@@ -54,6 +54,6 @@ ax.arrow(0,0,F2x,F2y,width=width_l,color='red',length_includes_head=True,animate
 ax.arrow(F2x,F2y,F3x,F3y,width=width_l,color='blue',length_includes_head=True,animated=True,head_width=head_w)
 ax.arrow(0,0,FRx,FRy,width=width_l*10,color='darkorange',length_includes_head=True,animated=True,head_width=head_w)
 ax.grid(color='green', linestyle='-.', linewidth=0.2)
-st.write("componentes: ",Cx,Cy)
+st.write("componentes: ",FRx,FRy)
 ax.set(xlim=(-le, le), ylim=(-le, le))
 st.pyplot(fig)

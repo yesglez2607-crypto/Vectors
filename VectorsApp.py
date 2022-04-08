@@ -22,7 +22,7 @@ with st.sidebar:
     #  B_theta = st.slider('Dirección del vector B', 0.0, 360.0, 45.0)
 
 deg2rad = 2.0*np.pi/360.0
-F3_theta_rad = deg2rad*F2_theta
+F2_theta_rad = deg2rad*F2_theta
 F3_theta_rad = deg2rad*F3_theta
 
 F1x = F1_mag

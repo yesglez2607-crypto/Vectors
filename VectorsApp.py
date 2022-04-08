@@ -54,11 +54,11 @@ ax.arrow(0,0,F2x,F2y,width=width_l,color='red',length_includes_head=True,animate
 ax.arrow(F2x,F2y,F3x,F3y,width=width_l,color='blue',length_includes_head=True,animated=True,head_width=head_w)
 ax.arrow(0,0,FRx,FRy,width=width_l*10,color='darkorange',length_includes_head=True,animated=True,head_width=head_w)
 ax.grid(color='green', linestyle='-.', linewidth=0.2)
-st.write("  \overrightarrow{F_1} ",F1x,"$ i $")
-st.write("  \overrightarrow{F_2} ",F2x,"$ i $"," + ",F2y,"$ j $")
-st.write("  \overrightarrow{F_3} ",F3x,"$ i $"," + ",F3y,"$ j $")
-st.write("  \overrightarrow{F_R} ",FRx,"$ i $"," + ",FRy,"$ j $")
-st.write("  \overrightarrow{F_1} + \overrightarrow{F_R} = ",FRx-F1x,"$ i $"," + ",FRy,"$ j $")
+st.write(" $ \overrightarrow{F_1} $",F1x,"$ i $")
+st.write(" $ \overrightarrow{F_2} $",F2x,"$ i $"," + ",F2y,"$ j $")
+st.write(" $ \overrightarrow{F_3} $",F3x,"$ i $"," + ",F3y,"$ j $")
+st.write(" $ \overrightarrow{F_R} $",FRx,"$ i $"," + ",FRy,"$ j $")
+st.write(" $ \overrightarrow{F_1} + \overrightarrow{F_R} = $",FRx-F1x,"$ i $"," + ",FRy,"$ j $")
 
 
 ax.set(xlim=(-le, le), ylim=(-le, le))

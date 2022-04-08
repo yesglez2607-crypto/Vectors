@@ -38,9 +38,11 @@ FR_mag = np.sqrt(FRx*FRx+FRy*FRy)
 fig = plt.figure()
 ax = fig.add_subplot(1,1,1)
 
-xm = max(abs(F1x),abs(F2x))
-xmax=max(abs(FRx),xm)
-ymax = max(abs(F2y),abs(FRy))
+xm1 = max(abs(F1x),abs(F2x))
+xm2 = max(abs(F3x),abs(FRx))
+xmax = max(xm1,xm2)
+ym1 = max(abs(F2y),abs(F3y))
+ymax = max(abs(FRy),ym1)
 #xmin = -xmax
 #ymin = -ymax
 width_l = max(xmax,ymax)*0.005

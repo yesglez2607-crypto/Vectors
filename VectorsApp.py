@@ -42,7 +42,7 @@ xmax = max(abs(F2x),abs(FRx))+max(abs(F2x),abs(FRx))*0.3
 xmin = -xmax
 ymax = max(abs(F2y),abs(FRy))+max(abs(F2y),abs(FRy))*0.3
 ymin = -ymax
-width_l = max(xmax,ymax)*0.001
+width_l = max(xmax,ymax)*0.01
 le = max(xmax,ymax)
 head_w = 20.0*width_l
 ax.axhline(0,color='black') # x = 0
@@ -51,7 +51,7 @@ ax.axvline(0,color='black') # y = 0
 
 ax.arrow(0,0,F1x,0.0,width=width_l,color='purple',length_includes_head=True,animated=True,head_width=head_w)
 ax.arrow(0,0,F2x,F2y,width=width_l,color='red',length_includes_head=True,animated=True,head_width=head_w)
-ax.arrow(F2x,F2y,F3x,F3y,width=width_l,color='blue',length_includes_head=True,animated=True,head_width=head_w)
+ax.arrow(0,0,F3x,F3y,width=width_l,color='blue',length_includes_head=True,animated=True,head_width=head_w)
 ax.arrow(0,0,FRx,FRy,width=width_l*10,color='darkorange',length_includes_head=True,animated=True,head_width=head_w)
 ax.grid(color='green', linestyle='-.', linewidth=0.2)
 

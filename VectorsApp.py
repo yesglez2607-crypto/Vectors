@@ -42,7 +42,7 @@ xmax = max(abs(F2x),abs(FRx))+max(abs(F2x),abs(FRx))*0.3
 xmin = -xmax
 ymax = max(abs(F2y),abs(FRy))+max(abs(F2y),abs(FRy))*0.3
 ymin = -ymax
-width_l = max(xmax,ymax)*0.01
+width_l = max(xmax,ymax)*0.005
 le = max(xmax,ymax)
 head_w = 20.0*width_l
 ax.axhline(0,color='black') # x = 0

@@ -46,8 +46,10 @@ ymax = max(abs(FRy),ym1)
 #xmin = -xmax
 #ymin = -ymax
 width_l = max(xmax,ymax)*0.005
-le1 = max(xmax,ymax)
-le = le1*1.3
+#le1 = max(xmax,ymax)
+#le = le1*1.3
+lx=xmax*1.3
+ly=ymax*1.3
 head_w = 20.0*width_l
 ax.axhline(0,color='black') # x = 0
 ax.axvline(0,color='black') # y = 0
@@ -68,7 +70,7 @@ ax.grid(True)
 # ax.set_ylabel('Time', color='crimson')
 ax.tick_params(axis='y', colors='crimson')
 
-ax.set(xlim=(-le, le), ylim=(-le, le))
+ax.set(xlim=(-lx, lx), ylim=(-ly, ly))
 st.pyplot(fig)
 st.write(" $ \overrightarrow{F_1} = $ ","{:.4f}".format(F1x),"$ i $")
 st.write(" $ \overrightarrow{F_2} = $ ","{:.4f}".format(F2x),"$ i $"," + ","{:.4f}".format(F2y),"$ j $")

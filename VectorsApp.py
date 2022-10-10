@@ -48,7 +48,7 @@ ymax = max(abs(FRy),ym1)
 width_l = max(xmax,ymax)*0.015
 #le1 = max(xmax,ymax)
 #le = le1*1.3
-lx=xmax*1.5
+lx=xmax*1.2
 ly=ymax*1.5
 head_w = 4.0*width_l
 ax.axhline(0,color='black') # x = 0
@@ -73,7 +73,7 @@ ax.grid(True)
 #ax.tick_params(axis='y', colors='crimson')
 
 ax.set(xlim=(-lx, lx), ylim=(-ly, ly))
-#plt.axis('equal')
+plt.axis('equal')
 st.pyplot(fig)
 st.write(" $ \overrightarrow{F_1} = $ ","{:.4f}".format(F1x),"$ i $")
 st.write(" $ \overrightarrow{F_2} = $ ","{:.4f}".format(F2x),"$ i $"," + ","{:.4f}".format(F2y),"$ j $")

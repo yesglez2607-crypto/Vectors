@@ -37,7 +37,7 @@ FR_mag = np.sqrt(FRx*FRx+FRy*FRy)
 
 fig = plt.figure()
 ax = fig.add_subplot(111,polar=True)
-ax = fig.add_axes([0.1, 0.1, 0.8, 0.8], polar=True)
+ax = fig.add_axes([0.0, 0.0, 0.8, 0.8], polar=True)
 xm1 = max(abs(F1x),abs(F2x))
 xm2 = max(abs(F3x),abs(FRx))
 xmax = max(xm1,xm2)

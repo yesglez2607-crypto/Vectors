@@ -68,7 +68,8 @@ ax.arrow(0.,0.,FRx,FRy,width=width_l,color='darkorange',length_includes_head=Tru
 #ax.set_theta_zero_location('N')
 #ax.set_theta_direction(-1) # clockwise
 ax.grid(True)
-
+ax = fig.add_axes([0.1, 0.1, 0.8, 0.8], polar=True,
+axisbg='#d5de9c')
 # ax.set_ylabel('Time', color='crimson')
 #ax.tick_params(axis='y', colors='crimson')
 

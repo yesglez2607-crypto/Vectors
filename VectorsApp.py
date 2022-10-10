@@ -61,7 +61,7 @@ ax.arrow(0,0,F3x,F3y,width=width_l,color='blue',length_includes_head=True,animat
 ax.arrow(0,0,FRx,FRy,width=width_l,color='darkorange',length_includes_head=True,animated=True,head_width=head_w)
 ax.grid(color='green', linestyle='-.', linewidth=0.2)
 
-ax.grid(True)
+#ax.grid(True)
 
 # ax.set_ylabel('Time', color='crimson')
 #ax.tick_params(axis='y', colors='crimson')

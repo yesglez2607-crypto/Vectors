@@ -50,7 +50,7 @@ width_l = max(xmax,ymax)*0.01
 #le = le1*1.3
 lx=xmax*1.5
 ly=ymax*1.1
-head_w = 10.0*width_l
+head_w = 5.0*width_l
 ax.axhline(0,color='black') # x = 0
 ax.axvline(0,color='black') # y = 0
 

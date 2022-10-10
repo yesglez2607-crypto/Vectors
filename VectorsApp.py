@@ -60,7 +60,7 @@ ax.arrow(0,0,FRx,FRy,width=width_l,color='darkorange',length_includes_head=True,
 ax.grid(color='green', linestyle='-.', linewidth=0.2)
 time = np.array([4 ,5 ,6, 7, 10])
 azi = np.array([70 ,100 ,120, 150, 170])
-ax = plt.add_subplot(111, projection='polar')
+ax = fig.add_subplot(111, projection='polar')
 ax.plot(azi*np.pi/180, time, color='black', marker='D', markerfacecolor='limegreen')
 ax.set_theta_zero_location('N')
 ax.set_theta_direction(-1) # clockwise

@@ -62,9 +62,9 @@ ax.grid(color='green', linestyle='-.', linewidth=0.2)
 ax.grid(True)
 
 # ax.set_ylabel('Time', color='crimson')
-ax.tick_params(axis='y', colors='crimson')
+#ax.tick_params(axis='y', colors='crimson')
 
-ax.set(xlim=(-le, le), ylim=(-le, le))
+#ax.set(xlim=(-le, le), ylim=(-le, le))
 time = np.array([4 ,5 ,6, 7, 10])
 azi = np.array([70 ,100 ,120, 150, 170])
 #ax = fig.add_subplot(111, projection='polar')

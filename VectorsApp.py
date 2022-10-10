@@ -37,6 +37,8 @@ FR_mag = np.sqrt(FRx*FRx+FRy*FRy)
 
 fig = plt.figure()
 ax = fig.add_subplot(111, projection='polar')
+ax.set_theta_zero_location('E')
+ax.set_theta_direction(1) # clockwise
 
 xm1 = max(abs(F1x),abs(F2x))
 xm2 = max(abs(F3x),abs(FRx))
@@ -69,8 +71,7 @@ ax.grid(True)
 #azi = np.array([70 ,100 ,120, 150, 170])
 #ax = fig.add_subplot(111, projection='polar')
 #ax.plot(azi*np.pi/180, color='black', marker='D', markerfacecolor='limegreen')
-ax.set_theta_zero_location('E')
-ax.set_theta_direction(1) # clockwise
+
 st.pyplot(fig)
 st.write(" $ \overrightarrow{F_1} = $ ","{:.4f}".format(F1x),"$ i $")
 st.write(" $ \overrightarrow{F_2} = $ ","{:.4f}".format(F2x),"$ i $"," + ","{:.4f}".format(F2y),"$ j $")

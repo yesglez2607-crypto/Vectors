@@ -51,8 +51,8 @@ width_l = max(xmax,ymax)*0.005
 lx=xmax*1.5
 ly=ymax*1.5
 head_w = 10.0*width_l
-ax.axhline(0,color='black') # x = 0
-ax.axvline(0,color='black') # y = 0
+#ax.axhline(0,color='black') # x = 0
+#ax.axvline(0,color='black') # y = 0
 
 
 ax.arrow(0,0,F1x,0.0,width=width_l,color='purple',length_includes_head=True,animated=True,head_width=head_w)

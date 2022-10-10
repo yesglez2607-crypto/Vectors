@@ -36,7 +36,7 @@ FRy = F2y + F3y
 FR_mag = np.sqrt(FRx*FRx+FRy*FRy)
 
 fig = plt.figure()
-ax = fig.add_subplot(111 )#,polar=True)
+ax = fig.add_subplot(111,polar=True)
 
 xm1 = max(abs(F1x),abs(F2x))
 xm2 = max(abs(F3x),abs(FRx))
@@ -72,8 +72,8 @@ ax = fig.add_axes([0.1, 0.1, 0.8, 0.8], polar=True)
 # ax.set_ylabel('Time', color='crimson')
 #ax.tick_params(axis='y', colors='crimson')
 
-ax.set(xlim=(-lx, lx), ylim=(-ly, ly))
-plt.axis('equal')
+#ax.set(xlim=(-lx, lx), ylim=(-ly, ly))
+#plt.axis('equal')
 st.pyplot(fig)
 st.write(" $ \overrightarrow{F_1} = $ ","{:.4f}".format(F1x),"$ i $")
 st.write(" $ \overrightarrow{F_2} = $ ","{:.4f}".format(F2x),"$ i $"," + ","{:.4f}".format(F2y),"$ j $")

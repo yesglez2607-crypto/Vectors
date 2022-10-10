@@ -58,8 +58,9 @@ ax.arrow(0,0,F2x,F2y,width=width_l,color='red',length_includes_head=True,animate
 ax.arrow(0,0,F3x,F3y,width=width_l,color='blue',length_includes_head=True,animated=True,head_width=head_w)
 ax.arrow(0,0,FRx,FRy,width=width_l,color='darkorange',length_includes_head=True,animated=True,head_width=head_w)
 ax.grid(color='green', linestyle='-.', linewidth=0.2)
-
-ax = plt.subplot(111, projection='polar')
+time = np.array([4 ,5 ,6, 7, 10])
+azi = np.array([70 ,100 ,120, 150, 170])
+ax = plt.add_subplot(111, projection='polar')
 ax.plot(azi*np.pi/180, time, color='black', marker='D', markerfacecolor='limegreen')
 ax.set_theta_zero_location('N')
 ax.set_theta_direction(-1) # clockwise

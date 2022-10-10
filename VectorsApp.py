@@ -36,7 +36,7 @@ FRy = F2y + F3y
 FR_mag = np.sqrt(FRx*FRx+FRy*FRy)
 
 fig = plt.figure()
-ax = fig.add_subplot(111,polar=True)
+ax = fig.add_subplot(111 )#,polar=True)
 
 xm1 = max(abs(F1x),abs(F2x))
 xm2 = max(abs(F3x),abs(FRx))
@@ -51,8 +51,8 @@ width_l = max(xmax,ymax)*0.005
 lx=xmax*1.5
 ly=ymax*1.5
 head_w = 10.0*width_l
-#ax.axhline(0,color='black') # x = 0
-#ax.axvline(0,color='black') # y = 0
+ax.axhline(0,color='black') # x = 0
+ax.axvline(0,color='black') # y = 0
 
 ax.annotate("", xy=(0.5, 0.0), xytext=(0.6, 0),arrowprops=dict(arrowstyle="->",color='red',lw=2.5))
 ax.arrow(0.,0.,F1x,0.0,width=width_l,color='purple',length_includes_head=True,animated=True,head_width=head_w)
@@ -72,8 +72,8 @@ ax.grid(True)
 # ax.set_ylabel('Time', color='crimson')
 #ax.tick_params(axis='y', colors='crimson')
 
-# ax.set(xlim=(-lx, lx), ylim=(-ly, ly))
-#plt.axis('equal')
+ax.set(xlim=(-lx, lx), ylim=(-ly, ly))
+plt.axis('equal')
 st.pyplot(fig)
 st.write(" $ \overrightarrow{F_1} = $ ","{:.4f}".format(F1x),"$ i $")
 st.write(" $ \overrightarrow{F_2} = $ ","{:.4f}".format(F2x),"$ i $"," + ","{:.4f}".format(F2y),"$ j $")

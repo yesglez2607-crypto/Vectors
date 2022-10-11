@@ -74,7 +74,7 @@ ax.grid(True)
 #ax.tick_params(axis='y', colors='crimson')
 
 #ax.set(xlim=(-lx, lx), ylim=(-ly, ly))
-#plt.axis('equal')
+plt.axis('equal')
 st.pyplot(fig)
 st.write(" $ \overrightarrow{F_1} = $ ","{:.4f}".format(F1x),"$ i $")
 st.write(" $ \overrightarrow{F_2} = $ ","{:.4f}".format(F2x),"$ i $"," + ","{:.4f}".format(F2y),"$ j $")

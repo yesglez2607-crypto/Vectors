@@ -48,7 +48,7 @@ ymax = max(abs(FRy),ym1)
 width_l = max(xmax,ymax)*0.015
 #le1 = max(xmax,ymax)
 #le = le1*1.3
-lx=xmax*1.2
+lx=xmax*1.5
 ly=ymax*1.5
 head_w = 4.0*width_l
 ax.axhline(0,color='black') # x = 0

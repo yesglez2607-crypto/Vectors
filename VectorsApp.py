@@ -73,7 +73,7 @@ ax.grid(True)
 # ax.set_ylabel('Time', color='crimson')
 #ax.tick_params(axis='y', colors='crimson')
 
-ax.set(xlim=(-lx, lx), ylim=(-ly, ly))
+#ax.set(xlim=(-lx, lx), ylim=(-ly, ly))
 #plt.axis('equal')
 st.pyplot(fig)
 st.write(" $ \overrightarrow{F_1} = $ ","{:.4f}".format(F1x),"$ i $")

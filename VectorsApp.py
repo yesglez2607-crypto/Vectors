@@ -83,5 +83,5 @@ st.write(" $ \overrightarrow{F_R} = $ ","{:.4f}".format(F3y),"$ i $"," + ","{:.4
 st.write(" $ \overrightarrow{F_1} + \overrightarrow{F_R} = $","{:.4f}".format(FRx+F1x),"$ i $"," + ","{:.4f}".format(FRy),"$ j $")
 picture = st.camera_input("Take a picture")
 
-if picture:
-    st.image(picture)
+#if picture:
+#    st.image(picture)

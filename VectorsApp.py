@@ -52,6 +52,7 @@ height = 400
 size = min(width, height)
 # make a square figure
 fig = plt.figure(figsize=(size, size))
+ax = fig.add_subplot(111)
 ax = fig.add_axes([0.1, 0.1, 0.8, 0.8], polar=True)
 
 

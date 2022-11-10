@@ -36,8 +36,25 @@ FRx = F2x + F3x
 FRy = F2y + F3y
 FR_mag = np.sqrt(FRx*FRx+FRy*FRy)
 
-fig = plt.figure()
-ax = fig.add_subplot(111   )#,polar=True)
+#fig = plt.figure()
+#ax = fig.add_subplot(111   )#,polar=True)
+
+from matplotlib.pyplot import figure, show, rc, grid
+#fig2 = plt.figure()
+# radar green, solid grid lines
+rc('grid', color='#316931', linewidth=1, linestyle='-')
+rc('xtick', labelsize=15)
+rc('ytick', labelsize=15)
+# force square figure and square axes looks better for polar, IMO
+width = 400
+height = 400
+# matplotlib.rcParams['figure.figsize']
+size = min(width, height)
+# make a square figure
+fig = figure(figsize=(size, size))
+ax = fig.add_axes([0.1, 0.1, 0.8, 0.8], polar=True)
+
+
 #ax = fig.add_axes([0.0, 0.0, 0.8, 0.8], polar=True)
 xm1 = max(abs(F1x),abs(F2x))
 xm2 = max(abs(F3x),abs(FRx))
@@ -87,20 +104,7 @@ plt.axis('equal')
 st.pyplot(fig)
 
 
-from matplotlib.pyplot import figure, show, rc, grid
-#fig2 = plt.figure()
-# radar green, solid grid lines
-rc('grid', color='#316931', linewidth=1, linestyle='-')
-rc('xtick', labelsize=15)
-rc('ytick', labelsize=15)
-# force square figure and square axes looks better for polar, IMO
-width = 400
-height = 400
-# matplotlib.rcParams['figure.figsize']
-size = min(width, height)
-# make a square figure
-fig2 = figure(figsize=(size, size))
-ax2 = fig2.add_axes([0.1, 0.1, 0.8, 0.8], polar=True)
+
 
 r = np.arange(0, 3.0, 0.01)
 theta = 2*np.pi*r

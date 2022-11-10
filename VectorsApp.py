@@ -80,7 +80,10 @@ with col2:
     st.markdown(""" 
     
 
-    
+
+
+
+
     
     ### Vectores de las fuerzas 
     

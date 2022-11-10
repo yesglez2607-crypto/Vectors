@@ -63,6 +63,7 @@ width2 = F2_mag
 width3 = F3_mag
 width4 = FR_mag
 
+head_w1=width1
 head_w2=width2
 head_w3=width3
 head_w4=width4

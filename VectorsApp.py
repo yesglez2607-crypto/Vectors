@@ -37,8 +37,8 @@ FRy = F2y + F3y
 FR_mag = np.sqrt(FRx*FRx+FRy*FRy)
 
 fig = plt.figure()
-ax = fig.add_subplot(111,polar=True)
-
+#ax = fig.add_subplot(111,polar=True)
+ax = fig.add_axes([0.25,0.11,0.775,0.77],polar=True)
 #from matplotlib.pyplot import figure, show, rc, grid
 #fig2 = plt.figure()
 # radar green, solid grid lines
@@ -53,7 +53,7 @@ plt.rc('ytick', labelsize=15)
 # make a square figure
 #fig = plt.figure(figsize=(size, size))
 #ax = fig.add_subplot(111)
-ax = fig.add_axes([0.25,0.11,0.775,0.77],polar=True)
+
 
 
 #ax = fig.add_axes([0.0, 0.0, 0.8, 0.8], polar=True)

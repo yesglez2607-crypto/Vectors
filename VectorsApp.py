@@ -21,7 +21,7 @@ with st.sidebar:
     F3_theta = st.number_input("ángulo de  F3:",0.0000)
     
 
-    st.figure('http://fcq.uach.mx/images/institucionales/Escudos/Dorado.png')
+    st.image('http://fcq.uach.mx/images/institucionales/Escudos/Dorado.png')
 
 
 deg2rad = 2.0*np.pi/360.0

@@ -57,8 +57,8 @@ if nn3 != 0.0:
 width1 =  0.2 #min(min(min(F1_mag,F2_mag),F3_mag),FR_mag)
 head_w=width1*1.8
 head_l1=F1_mag*0.2
-head_l2=F2_mag*0.3
-head_l3=F3_mag*0.4
+head_l2=F2_mag*0.2
+head_l3=F3_mag*0.2
 head_l4=FR_mag*0.2
 
 col1, col2 = st.columns(2)

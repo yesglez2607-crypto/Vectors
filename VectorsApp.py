@@ -54,7 +54,7 @@ if nn3 != 0.0:
     F3_mag=F3_mag/nn3
     FR_mag=FR_mag/nn3
 
-width1 = 0.2 
+width1 =  min(min(min(F1_mag,F2_mag),F3_mag),FR_mag)
 head_w=width1*1.8
 head_l=head_w*0.9
 

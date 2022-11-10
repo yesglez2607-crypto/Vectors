@@ -94,7 +94,9 @@ rc('grid', color='#316931', linewidth=1, linestyle='-')
 rc('xtick', labelsize=15)
 rc('ytick', labelsize=15)
 # force square figure and square axes looks better for polar, IMO
-width, height = matplotlib.rcParams['figure.figsize']
+width = 400
+height = 400
+# matplotlib.rcParams['figure.figsize']
 size = min(width, height)
 # make a square figure
 fig = figure(figsize=(size, size))

@@ -57,12 +57,12 @@ col1, col2 = st.columns(2)
 
 with col1:
     if F1_mag != 0.0:
-        ax.arrow(0.0,0.0,0.0,F1_mag,width=width1,edgecolor = 'black', facecolor = 'purple',length_includes_head=True,animated=True,head_width=head_w1,lw=2.0)
+        ax.arrow(0.0,0.0,0.0,F1_mag,width=width1,edgecolor = 'black', facecolor = 'purple',length_includes_head=True,animated=True,head_width=head_w,lw=2.0)
     if F2_mag !=0.0 and F2_theta != 0.0:    
-        ax.arrow(F2_theta*np.pi/180.0,0.0,0.0,F2_mag,width=width1,edgecolor = 'black', facecolor = 'red',length_includes_head=True,animated=True,head_width=head_w2,lw=2.0)
+        ax.arrow(F2_theta*np.pi/180.0,0.0,0.0,F2_mag,width=width1,edgecolor = 'black', facecolor = 'red',length_includes_head=True,animated=True,head_width=head_w,lw=2.0)
     if F3_mag !=0.0 and F3_theta != 0.0:
-        ax.arrow(F3_theta*np.pi/180.0,0.0,0.0,F3_mag,width=width1,edgecolor = 'black', facecolor = 'blue',length_includes_head=True,animated=True,head_width=head_w3,lw=2.0)
-        ax.arrow(FR_theta,0.0,0.0,FR_mag,width=width1,edgecolor = 'black', facecolor = 'darkorange',length_includes_head=True,animated=True,head_width=head_w4,lw=2.0) 
+        ax.arrow(F3_theta*np.pi/180.0,0.0,0.0,F3_mag,width=width1,edgecolor = 'black', facecolor = 'blue',length_includes_head=True,animated=True,head_width=head_w,lw=2.0)
+        ax.arrow(FR_theta,0.0,0.0,FR_mag,width=width1,edgecolor = 'black', facecolor = 'darkorange',length_includes_head=True,animated=True,head_width=head_w,lw=2.0) 
 
     ax.grid(True,lw=0.8,linestyle='--')
     st.pyplot(fig)

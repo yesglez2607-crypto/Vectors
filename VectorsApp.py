@@ -63,10 +63,10 @@ width2 = F2_mag*0.1
 width3 = F3_mag*0.1
 width4 = FR_mag*0.1
 
-head_w1=width1*1
-head_w2=width2*1
-head_w3=width3*1
-head_w4=width4*1
+head_w1=width1*1.2
+head_w2=width2*1.2
+head_w3=width3*1.2
+head_w4=width4*1.2
 
 lx=xmax*1.2
 ly=ymax*1.5

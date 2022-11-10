@@ -94,6 +94,7 @@ if F3_mag !=0.0 and F3_theta != 0.0:
 #ax.set_theta_zero_location('N')
 #ax.set_theta_direction(-1) # clockwise
 ax.grid(True)
+st.pyplot(fig)
 #ax = fig.add_axes([0.1, 0.1, 0.8, 0.8], polar=True,
 
 # ax.set_ylabel('Time', color='crimson')
@@ -116,7 +117,7 @@ ax.grid(True)
 #This is the line I added:
 #arr = plt.arrow(0, 0.5, 0,1 , alpha = 0.5, width = 0.1,edgecolor = 'black', facecolor = 'green',lw = 2)
 
-plt.show()
+#plt.show()
 
 
 

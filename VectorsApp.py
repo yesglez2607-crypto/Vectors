@@ -101,7 +101,7 @@ ax.grid(True)
 
 #ax.set(xlim=(-lx, lx), ylim=(-ly, ly))
 ##plt.axis('equal')
-st.pyplot(fig)
+#st.pyplot(fig)
 
 
 

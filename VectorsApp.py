@@ -1,6 +1,7 @@
 import streamlit as st
 import matplotlib.pyplot as plt
 import numpy as np
+import math as mt
 
 st.title("App para suma de vectores")
 
@@ -35,7 +36,7 @@ F3y = F3_mag*np.sin(F3_theta_rad)
 FRx = F2x + F3x
 FRy = F2y + F3y
 FR_mag = np.sqrt(FRx*FRx+FRy*FRy)
-FR_theta = np.atan2(FRx,FRy)
+FR_theta = mt.atan2(FRy,FRx)
 
 fig = plt.figure()
 #ax = fig.add_subplot(111,polar=True)

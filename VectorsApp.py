@@ -86,7 +86,7 @@ with col2:
 
 
 strh=" $ \overrightarrow{F_1} = $ "+"{:.4f}".format(F1x)+"$ i $"
-stwrite(strh)
+st.write(strh)
 
     if F1_mag != 0.0:
         st.write(" $ \overrightarrow{F_1} = $ ","{:.4f}".format(F1x),"$ i $")

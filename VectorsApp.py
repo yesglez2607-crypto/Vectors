@@ -82,7 +82,7 @@ if F2_mag !=0.0 and F2_theta != 0.0:
     ax.arrow(F2_theta*np.pi/180.0,0.0,0.0,F2_mag,width=width_l,color='red',length_includes_head=True,animated=True,head_width=head_w)
     st.write(" $ \overrightarrow{F_2} = $ ","{:.4f}".format(F2x),"$ i $"," + ","{:.4f}".format(F2y),"$ j $")
 if F3_mag !=0.0 and F3_theta != 0.0:
-    ax.arrow(F3_theta*np.pi/180.0,0.,F3_mag,width=width_l,color='blue',length_includes_head=True,animated=True,head_width=head_w)
+    ax.arrow(F3_theta*np.pi/18,0.0,0.0,F3_mag,width=width_l,color='blue',length_includes_head=True,animated=True,head_width=head_w)
     ax.arrow(0.,0.,FRy,FRx,width=width_l,color='darkorange',length_includes_head=True,animated=True,head_width=head_w) 
     st.write(" $ \overrightarrow{F_3} = $ ","{:.4f}".format(F3x),"$ i $"," + ","{:.4f}".format(F3y),"$ j $")
     st.write(" $ \overrightarrow{F_R} = $ ","{:.4f}".format(F3y),"$ i $"," + ","{:.4f}".format(FRy),"$ j $")

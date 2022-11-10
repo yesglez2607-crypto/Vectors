@@ -7,6 +7,7 @@ st.set_page_config(layout="wide")
 st.title("Práctica de laboratorio No 5")
 st.markdown(" ## Vectores: Fuerzas en equilibrio ")
 
+
 with st.sidebar:
     st.markdown("Elige la magnitud del vector $ \overrightarrow{F_1}$ ")
     F1_mag = st.number_input("magnitud:",0.0000)
@@ -59,7 +60,7 @@ col1, col2 = st.columns(2)
 
 with col1:
     if F1_mag != 0.0:
-        ax.arrow(0.0,0.0,0.0,F1_mag,width=width1,edgecolor = 'black', facecolor = 'purple',length_includes_head=True,animated=True,head_width=head_w,head_length=head_l,lw=2.0)
+        ax.arrow(0.0,0.0,0.0,F1_mag,width=width1,edgecolor = 'black', facecolor = 'darkgreen',length_includes_head=True,animated=True,head_width=head_w,head_length=head_l,lw=2.0)
     if F2_mag !=0.0 and F2_theta != 0.0:    
         ax.arrow(F2_theta*np.pi/180.0,0.0,0.0,F2_mag,width=width1,edgecolor = 'black', facecolor = 'red',length_includes_head=True,animated=True,head_width=head_w,head_length=head_l,lw=2.0)
     if F3_mag !=0.0 and F3_theta != 0.0:

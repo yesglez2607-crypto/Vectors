@@ -23,6 +23,7 @@ with st.sidebar:
 
     st.image('Dorado.jpg')
     st.markdown(""" #### Autores:
+    
              *Dr. Juan Pedro Palomares Báez
              *Dr. José Manuel Nápoles Duarte
              *MC. Carlos Armando de la Vega Cobos""")

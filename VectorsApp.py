@@ -100,7 +100,7 @@ ax.grid(True)
 #ax.tick_params(axis='y', colors='crimson')
 
 #ax.set(xlim=(-lx, lx), ylim=(-ly, ly))
-plt.axis('equal')
+##plt.axis('equal')
 st.pyplot(fig)
 
 

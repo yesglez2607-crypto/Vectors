@@ -42,7 +42,7 @@ ax = fig.add_axes([0.0,0.0,1.0,1.0],polar=True)
 plt.rc('grid', color='#316931', linewidth=2, linestyle='-')
 plt.rc('xtick', labelsize=16)  
 plt.rc('ytick', labelsize=1)
-
+nn3=1.0
 nn1 = max(F1_mag,F2_mag)
 nn2 = max(F3_mag,FR_mag)
 nn3=max(nn1,nn2)

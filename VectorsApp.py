@@ -80,6 +80,8 @@ with col2:
     st.write('    ')
     st.write('    ')
     st.write('    ')
+    st.write('    ')
+    st.write('    ')    
     st.markdown(""" 
     ### Vectores de las fuerzas 
     

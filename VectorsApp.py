@@ -87,7 +87,12 @@ plt.axis('equal')
 st.pyplot(fig)
 
 
+from matplotlib.pyplot import figure, show, rc, grid
 
+# radar green, solid grid lines
+rc('grid', color='#316931', linewidth=1, linestyle='-')
+rc('xtick', labelsize=15)
+rc('ytick', labelsize=15)
 #picture = st.camera_input("Take a picture")
 
 #if picture:

@@ -85,7 +85,7 @@ with col2:
     """)
 
 
-strh='"$ \overrightarrow{F_1} = $"' #+ '"{:.4f}".format(F1x)'+'"$ i $"'
+strh="$ \overrightarrow{F_1} = $" #+ '"{:.4f}".format(F1x)'+'"$ i $"'
 st.write(strh)
 
     if F1_mag != 0.0:

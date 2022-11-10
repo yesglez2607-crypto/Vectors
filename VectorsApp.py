@@ -51,7 +51,7 @@ ymax = max(abs(FRy),ym1)
 width_l = max(xmax,ymax)*0.015
 
 nn1 = max(F1_mag,F2_mag)
-nn1 = max(F3_mag,FR_mag)
+nn2 = max(F3_mag,FR_mag)
 nn3=max(nn1,nn2)
 
 F1_mag=F1_mag/nn3

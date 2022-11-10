@@ -39,7 +39,6 @@ fig = plt.figure()
 ax = fig.add_axes([0.0,0.0,1.0,1.0],polar=True)
 
 plt.rc('grid', color='#316931', linewidth=2, linestyle='-')
-plt.rc('lines', linewidth=10, color='r')
 plt.rc('xtick', labelsize=16)  
 plt.rc('ytick', labelsize=1)
 

@@ -88,7 +88,7 @@ with col1:
        # st.write(" $ \overrightarrow{F_R} = $ ","{:.4f}".format(F3y),"$ i $"," + ","{:.4f}".format(FRy),"$ j $")
        # st.write(" $ \overrightarrow{F_1} + \overrightarrow{F_R} = $","{:.4f}".format(FRx+F1x),"$ i $"," + ","{:.4f}".format(FRy),"$ j $")
 
-    ax.grid(True)
+    ax.grid(True,lw=2)
     st.pyplot(fig)
 
 with col2:

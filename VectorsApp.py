@@ -6,15 +6,15 @@ st.title("App para suma de vectores")
 
 with st.sidebar:
     st.markdown("Elige la magnitud del vector $ \overrightarrow{F_1}$ ")
-    F1_mag = st.number_input("magnitud:")
+    F1_mag = st.number_input("magnitud:",0.0000)
     st.markdown("Elige la magnitud y dirección del vector $ \overrightarrow{F_2} $")
     #A_mag = st.slider('Magnitud del vector A', 0.0, 10.0, 1.0,step=0.1)
-    F2_mag = st.number_input("magnitud de F2:",0.000)
-    F2_theta = st.number_input("ángulo de F2:",0.000) 
+    F2_mag = st.number_input("magnitud de F2:",0.0000)
+    F2_theta = st.number_input("ángulo de F2:",0.0000) 
     st.markdown("Elige la magnitud y dirección del vector $ \overrightarrow{F_3} $")
     #A_mag = st.slider('Magnitud del vector A', 0.0, 10.0, 1.0,step=0.1)
-    F3_mag = st.number_input("magnitud de F3:",0.000)
-    F3_theta = st.number_input("ángulo de  F3:",0.000)
+    F3_mag = st.number_input("magnitud de F3:",0.0000)
+    F3_theta = st.number_input("ángulo de  F3:",0.0000)
     #B_mag = st.number_input("",0.0)    
     #B_theta= st.number_input("pon un ángulo B",0.000)
     #B_mag = st.slider('Magnitud del vector B', 0.0, 10.0, 2.0,step=0.1)
@@ -56,11 +56,14 @@ ax.axhline(0,color='black') # x = 0
 ax.axvline(0,color='black') # y = 0
 
 #ax.annotate("", xy=(0.0,F1x), xytext=(0, 0),arrowprops=dict(arrowstyle="->",color='red',lw=2.5))
-#if F1_mag
-ax.arrow(0.,0.,F1x*np.pi/2.0,0.0,width=width_l,color='purple',length_includes_head=True,animated=True,head_width=head_w)
-ax.arrow(0.,0.,F2x,F2y,width=width_l,color='red',length_includes_head=True,animated=True,head_width=head_w)
-ax.arrow(0.,0.,F3x,F3y,width=width_l,color='blue',length_includes_head=True,animated=True,head_width=head_w)
-ax.arrow(0.,0.,FRx,FRy,width=width_l,color='darkorange',length_includes_head=True,animated=True,head_width=head_w) 
+if F1_mag /= 0.0:
+    ax.arrow(0.,0.,F1x*np.pi/2.0,0.0,width=width_l,color='purple',length_includes_head=True,animated=True,head_width=head_w)
+    st.write(" $ \overrightarrow{F_1} = $ ","{:.4f}".format(F1x),"$ i $")
+if F2_mag /=0.0 and F2_theta /= 0.0:    
+    ax.arrow(0.,0.,F2x,F2y,width=width_l,color='red',length_includes_head=True,animated=True,head_width=head_w)
+if F3_mag /=0.0 and F3_theta /= 0.0:
+    ax.arrow(0.,0.,F3x,F3y,width=width_l,color='blue',length_includes_head=True,animated=True,head_width=head_w)
+    ax.arrow(0.,0.,FRx,FRy,width=width_l,color='darkorange',length_includes_head=True,animated=True,head_width=head_w) 
 
 
 ########### ax.grid(color='green', linestyle='-.', linewidth=0.2)
@@ -78,7 +81,7 @@ ax.grid(True)
 #ax.set(xlim=(-lx, lx), ylim=(-ly, ly))
 plt.axis('equal')
 st.pyplot(fig)
-st.write(" $ \overrightarrow{F_1} = $ ","{:.4f}".format(F1x),"$ i $")
+
 st.write(" $ \overrightarrow{F_2} = $ ","{:.4f}".format(F2x),"$ i $"," + ","{:.4f}".format(F2y),"$ j $")
 st.write(" $ \overrightarrow{F_3} = $ ","{:.4f}".format(F3x),"$ i $"," + ","{:.4f}".format(F3y),"$ j $")
 st.write(" $ \overrightarrow{F_R} = $ ","{:.4f}".format(F3y),"$ i $"," + ","{:.4f}".format(FRy),"$ j $")

@@ -41,7 +41,7 @@ ax = fig.add_axes([0.0,0.0,1.0,1.0],polar=True)
 
 plt.rc('grid', color='#316931', linewidth=3, linestyle='-')
 plt.rc('xtick', labelsize=15)
-plt.rc('ytick', labelsize=15)
+#plt.rc('ytick', labelsize=15)
 
 xm1 = max(abs(F1x),abs(F2x))
 xm2 = max(abs(F3x),abs(FRx))

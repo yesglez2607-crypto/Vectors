@@ -37,7 +37,7 @@ FR_theta = mt.atan2(FRy,FRx)
 fig = plt.figure()
 ax = fig.add_axes([0.0,0.0,1.0,1.0],polar=True)
 
-plt.rc('grid', color='#316931', linewidth=3, linestyle='-')
+plt.rc('grid', color='#316931', linewidth=6, linestyle='-')
 plt.rc('xtick', labelsize=16)  
 plt.rc('ytick', labelsize=1)
 

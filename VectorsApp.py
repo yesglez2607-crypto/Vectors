@@ -75,7 +75,7 @@ col1, col2 = st.columns(2)
 
 with col1:
     if F1_mag != 0.0:
-        ax.arrow(0.0,0.0,0.0,F1x,width=width1,color='purple',length_includes_head=True,animated=True,head_width=head_w1)
+        ax.arrow(0.0,0.0,0.0,F1_mag,width=width1,color='purple',length_includes_head=True,animated=True,head_width=head_w1)
        # st.write(" $ \overrightarrow{F_1} = $ ","{:.4f}".format(F1x),"$ i $")
     if F2_mag !=0.0 and F2_theta != 0.0:    
         ax.arrow(F2_theta*np.pi/180.0,0.0,0.0,F2_mag,width=width2,color='red',length_includes_head=True,animated=True,head_width=head_w2)

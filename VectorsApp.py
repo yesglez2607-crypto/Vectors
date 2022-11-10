@@ -39,19 +39,19 @@ FR_mag = np.sqrt(FRx*FRx+FRy*FRy)
 #fig = plt.figure()
 #ax = fig.add_subplot(111   )#,polar=True)
 
-from matplotlib.pyplot import figure, show, rc, grid
+#from matplotlib.pyplot import figure, show, rc, grid
 #fig2 = plt.figure()
 # radar green, solid grid lines
-rc('grid', color='#316931', linewidth=1, linestyle='-')
-rc('xtick', labelsize=15)
-rc('ytick', labelsize=15)
+plt.rc('grid', color='#316931', linewidth=1, linestyle='-')
+plt.rc('xtick', labelsize=15)
+plt.rc('ytick', labelsize=15)
 # force square figure and square axes looks better for polar, IMO
 width = 400
 height = 400
 # matplotlib.rcParams['figure.figsize']
 size = min(width, height)
 # make a square figure
-fig = figure(figsize=(size, size))
+fig = plt.figure(figsize=(size, size))
 ax = fig.add_axes([0.1, 0.1, 0.8, 0.8], polar=True)
 
 

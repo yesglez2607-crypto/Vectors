@@ -38,11 +38,8 @@ FR_mag = np.sqrt(FRx*FRx+FRy*FRy)
 
 fig = plt.figure()
 #ax = fig.add_subplot(111,polar=True)
-ax = fig.add_axes([0.,0.,0.,0.],polar=True)
-#ax.spines['left'].set_position('center')
-#ax.spines['bottom'].set_position('center')
-#fig2 = plt.figure()
-# radar green, solid grid lines
+ax = fig.add_axes([0.0,0.0,0.0,0.0],polar=True)
+
 plt.rc('grid', color='#316931', linewidth=1, linestyle='-')
 plt.rc('xtick', labelsize=15)
 plt.rc('ytick', labelsize=15)

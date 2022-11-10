@@ -53,7 +53,7 @@ plt.rc('ytick', labelsize=15)
 # make a square figure
 #fig = plt.figure(figsize=(size, size))
 #ax = fig.add_subplot(111)
-ax = fig.add_axes([0.125,0.11,0.775,0.77],polar=True)
+ax = fig.add_axes([0.25,0.11,0.775,0.77],polar=True)
 
 
 #ax = fig.add_axes([0.0, 0.0, 0.8, 0.8], polar=True)

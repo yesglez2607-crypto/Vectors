@@ -53,9 +53,14 @@ width_l = max(xmax,ymax)*0.015
 lx=xmax*1.2
 ly=ymax*1.5
 head_w = 4.0*width_l
+col1, col2 = st.columns(2)
+
+
 if F1_mag != 0.0:
-    ax.arrow(0.0,0.0,0.0,F1x,width=width_l,color='purple',length_includes_head=True,animated=True,head_width=head_w)
-    st.write(" $ \overrightarrow{F_1} = $ ","{:.4f}".format(F1x),"$ i $")
+    with col2:
+        ax.arrow(0.0,0.0,0.0,F1x,width=width_l,color='purple',length_includes_head=True,animated=True,head_width=head_w)
+    with col1:
+        st.write(" $ \overrightarrow{F_1} = $ ","{:.4f}".format(F1x),"$ i $")
 if F2_mag !=0.0 and F2_theta != 0.0:    
     ax.arrow(F2_theta*np.pi/180.0,0.0,0.0,F2_mag,width=width_l,color='red',length_includes_head=True,animated=True,head_width=head_w)
     st.write(" $ \overrightarrow{F_2} = $ ","{:.4f}".format(F2x),"$ i $"," + ","{:.4f}".format(F2y),"$ j $")

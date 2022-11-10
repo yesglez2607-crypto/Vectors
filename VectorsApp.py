@@ -51,7 +51,7 @@ F3_mag=F3_mag/nn3
 FR_mag=FR_mag/nn3
 
 width1 = 0.2 
-head_w=width1*1.5
+head_w=width1*1.8
 
 col1, col2 = st.columns(2)
 

@@ -45,13 +45,14 @@ plt.rc('ytick', labelsize=1)
 nn3=1.0
 nn1 = max(F1_mag,F2_mag)
 nn2 = max(F3_mag,FR_mag)
-nn3=max(max(nn1,nn2),1.0)
+nn3=max(nn1,nn2)
 
 
-F1_mag=F1_mag/nn3
-F2_mag=F2_mag/nn3
-F3_mag=F3_mag/nn3
-FR_mag=FR_mag/nn3
+if nn3 != 0.0:
+    F1_mag=F1_mag/nn3
+    F2_mag=F2_mag/nn3
+    F3_mag=F3_mag/nn3
+    FR_mag=FR_mag/nn3
 
 width1 = 0.2 
 head_w=width1*1.8

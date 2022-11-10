@@ -77,14 +77,10 @@ str4="#### $ \overrightarrow{F_R} = $ " + " {:.4f}".format(FRx) + " $ i $" + " +
 str5="###  $ \overrightarrow{F_1} + \overrightarrow{F_R} = $" + " {:.4f}".format(FRx+F1x) + " $ i $" + " + " + " {:.4f}".format(FRy) + " $ j $"
 
 with col2:
+    st.writ('    ')
+    st.writ('    ')
+    st.writ('    ')
     st.markdown(""" 
-    
-
-
-
-
-
-    
     ### Vectores de las fuerzas 
     
 

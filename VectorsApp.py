@@ -70,7 +70,8 @@ with col1:
     st.pyplot(fig)
 
 
-
+strh='"$ \overrightarrow{F_1} = $"' + '"{:.4f}".format(F1x)'+'"$ i $"'
+st.write(strh)
 with col2:
     st.write(" ")
     st.write(" ")
@@ -85,8 +86,7 @@ with col2:
     """)
 
 
-strh="$ \overrightarrow{F_1} = $" #+ '"{:.4f}".format(F1x)'+'"$ i $"'
-st.write(strh)
+
 
     if F1_mag != 0.0:
         st.write(" $ \overrightarrow{F_1} = $ ","{:.4f}".format(F1x),"$ i $")

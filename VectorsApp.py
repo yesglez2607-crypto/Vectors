@@ -110,8 +110,7 @@ grid(True)
 
 ax2.set_title("And there was much rejoicing!", fontsize=20)
 #This is the line I added:
-arr = plt.arrow(0, 0.5, 0,1 , alpha = 0.5, width = 0.1,
-edgecolor = 'black', facecolor = 'green',lw = 2)
+arr = plt.arrow(0, 0.5, 0,1 , alpha = 0.5, width = 0.1,edgecolor = 'black', facecolor = 'green',lw = 2)
 
 plt.show()
 

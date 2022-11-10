@@ -19,6 +19,9 @@ with st.sidebar:
     
     F3_mag = st.number_input("magnitud de F3:",0.0000)
     F3_theta = st.number_input("ángulo de  F3:",0.0000)
+    
+
+    st.figure('http://fcq.uach.mx/images/institucionales/Escudos/Dorado.png')
 
 
 deg2rad = 2.0*np.pi/360.0

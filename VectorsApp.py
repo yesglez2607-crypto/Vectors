@@ -61,9 +61,13 @@ if F1_mag != 0.0:
     st.write(" $ \overrightarrow{F_1} = $ ","{:.4f}".format(F1x),"$ i $")
 if F2_mag !=0.0 and F2_theta != 0.0:    
     ax.arrow(0.,0.,F2x,F2y,width=width_l,color='red',length_includes_head=True,animated=True,head_width=head_w)
+    st.write(" $ \overrightarrow{F_2} = $ ","{:.4f}".format(F2x),"$ i $"," + ","{:.4f}".format(F2y),"$ j $")
 if F3_mag !=0.0 and F3_theta != 0.0:
     ax.arrow(0.,0.,F3x,F3y,width=width_l,color='blue',length_includes_head=True,animated=True,head_width=head_w)
     ax.arrow(0.,0.,FRx,FRy,width=width_l,color='darkorange',length_includes_head=True,animated=True,head_width=head_w) 
+    st.write(" $ \overrightarrow{F_3} = $ ","{:.4f}".format(F3x),"$ i $"," + ","{:.4f}".format(F3y),"$ j $")
+    st.write(" $ \overrightarrow{F_R} = $ ","{:.4f}".format(F3y),"$ i $"," + ","{:.4f}".format(FRy),"$ j $")
+    st.write(" $ \overrightarrow{F_1} + \overrightarrow{F_R} = $","{:.4f}".format(FRx+F1x),"$ i $"," + ","{:.4f}".format(FRy),"$ j $")
 
 
 ########### ax.grid(color='green', linestyle='-.', linewidth=0.2)
@@ -82,10 +86,8 @@ ax.grid(True)
 plt.axis('equal')
 st.pyplot(fig)
 
-st.write(" $ \overrightarrow{F_2} = $ ","{:.4f}".format(F2x),"$ i $"," + ","{:.4f}".format(F2y),"$ j $")
-st.write(" $ \overrightarrow{F_3} = $ ","{:.4f}".format(F3x),"$ i $"," + ","{:.4f}".format(F3y),"$ j $")
-st.write(" $ \overrightarrow{F_R} = $ ","{:.4f}".format(F3y),"$ i $"," + ","{:.4f}".format(FRy),"$ j $")
-st.write(" $ \overrightarrow{F_1} + \overrightarrow{F_R} = $","{:.4f}".format(FRx+F1x),"$ i $"," + ","{:.4f}".format(FRy),"$ j $")
+
+
 #picture = st.camera_input("Take a picture")
 
 #if picture:

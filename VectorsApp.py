@@ -3,7 +3,8 @@ import matplotlib.pyplot as plt
 import numpy as np
 import math as mt
 
-st.title("App para suma de vectores")
+st.title("Práctica de laboratorio No 5")
+st.markdown(" #Vectores: Fuerzas en equilibrio ")
 
 with st.sidebar:
     st.markdown("Elige la magnitud del vector $ \overrightarrow{F_1}$ ")

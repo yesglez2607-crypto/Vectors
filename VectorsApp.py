@@ -39,7 +39,7 @@ FR_mag = np.sqrt(FRx*FRx+FRy*FRy)
 fig = plt.figure()
 #ax = fig.add_subplot(111,polar=True)
 ax = fig.add_axes([0.125,0.11,0.775,0.77],polar=True)
-ax.spines['left'].set_position('center')
+ax.spines[0].set_position('center')
 ax.spines['bottom'].set_position('center')
 #fig2 = plt.figure()
 # radar green, solid grid lines

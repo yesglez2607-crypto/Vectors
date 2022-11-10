@@ -70,8 +70,12 @@ with col1:
     st.pyplot(fig)
 
 
-strh="#### $ \overrightarrow{F_1} = $" + " {:.4f}".format(F1x)+" $ i $"
-st.write(strh)
+str1="#### $ \overrightarrow{F_1} = $ " + " {:.4f}".format(F1x) + " $ i $"
+str2="#### $ \overrightarrow{F_2} = $ " + " {:.4f}".format(F2x) + " $ i $" + " + " + " {:.4f}".format(F2y) + " $ j $"
+str3="#### $ \overrightarrow{F_3} = $ " + " {:.4f}".format(F3x) + " $ i $" + " + " + " {:.4f}".format(F3y) + " $ j $"
+str4="#### $ \overrightarrow{F_R} = $ " + " {:.4f}".format(FRx) + " $ i $" + " + " + " {:.4f}".format(FRy) + " $ j $"
+str5="###  $ \overrightarrow{F_1} + \overrightarrow{F_R} = $" + " {:.4f}".format(FRx+F1x) + " $ i $" + " + " + " {:.4f}".format(FRy) + " $ j $"
+
 with col2:
     st.write(" ")
     st.write(" ")
@@ -90,10 +94,14 @@ with col2:
 
     if F1_mag != 0.0:
         st.write(" $ \overrightarrow{F_1} = $ ","{:.4f}".format(F1x),"$ i $")
-        st.markdown(strh)
-    if F2_mag !=0.0 and F2_theta != 0.0:    
+        st.markdown(str1)
+    if F2_mag !=0.0 and F2_theta != 0.0: 
+        st.markdown(str2)   
         st.write(" $ \overrightarrow{F_2} = $ ","{:.4f}".format(F2x),"$ i $"," + ","{:.4f}".format(F2y),"$ j $")
     if F3_mag !=0.0 and F3_theta != 0.0:
+        st.markdown(str3)
+        st.markdown(str4)
+        st.markdown(str5)
         st.write(" $ \overrightarrow{F_3} = $ ","{:.4f}".format(F3x),"$ i $"," + ","{:.4f}".format(F3y),"$ j $")
         st.write(" $ \overrightarrow{F_R} = $ ","{:.4f}".format(F3y),"$ i $"," + ","{:.4f}".format(FRy),"$ j $")
         st.write(" $ \overrightarrow{F_1} + \overrightarrow{F_R} = $","{:.4f}".format(FRx+F1x),"$ i $"," + ","{:.4f}".format(FRy),"$ j $")

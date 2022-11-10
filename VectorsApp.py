@@ -74,7 +74,7 @@ str1="#### $ \overrightarrow{F_1} = $ " + " {:.4f}".format(F1x) + " $ i $"
 str2="#### $ \overrightarrow{F_2} = $ " + " {:.4f}".format(F2x) + " $ i $" + " + " + " {:.4f}".format(F2y) + " $ j $"
 str3="#### $ \overrightarrow{F_3} = $ " + " {:.4f}".format(F3x) + " $ i $" + " + " + " {:.4f}".format(F3y) + " $ j $"
 str4="#### $ \overrightarrow{F_R} = $ " + " {:.4f}".format(FRx) + " $ i $" + " + " + " {:.4f}".format(FRy) + " $ j $"
-str5="####  $ \overrightarrow{F_1} + \overrightarrow{F_R} = $" + " {:.4f}".format(FRx+F1x) + " $ i $" + " + " + " {:.4f}".format(FRy) + " $ j $ "
+str5="#### $ \overrightarrow{F_1} + \overrightarrow{F_R} = $" + " {:.4f}".format(FRx+F1x) + " $ i $" + " + " + " {:.4f}".format(FRy) + " $ j $ "
 
 with col2:
     st.write('    ')

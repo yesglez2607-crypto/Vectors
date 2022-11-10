@@ -37,7 +37,7 @@ FRy = F2y + F3y
 FR_mag = np.sqrt(FRx*FRx+FRy*FRy)
 
 fig = plt.figure()
-ax = fig.add_subplot(111   )#,polar=True)
+ax = fig.add_subplot(111)#,polar=True)
 
 #from matplotlib.pyplot import figure, show, rc, grid
 #fig2 = plt.figure()
@@ -70,8 +70,8 @@ width_l = max(xmax,ymax)*0.015
 lx=xmax*1.2
 ly=ymax*1.5
 head_w = 4.0*width_l
-ax.axhline(0,color='black') # x = 0
-ax.axvline(0,color='black') # y = 0
+#ax.axhline(0,color='black') # x = 0
+#ax.axvline(0,color='black') # y = 0
 
 #ax.annotate("", xy=(0.0,F1x), xytext=(0, 0),arrowprops=dict(arrowstyle="->",color='red',lw=2.5))
 if F1_mag != 0.0:

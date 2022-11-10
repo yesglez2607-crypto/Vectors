@@ -58,6 +58,7 @@ F1_mag=F1_mag/nn3
 F2_mag=F2_mag/nn3
 F3_mag=F3_mag/nn3
 FR_mag=FR_mag/nn3
+nn3=1.0 
 width1 = nn3*0.2 #F1_mag*0.1
 width2 = nn3*0.2 #F2_mag*0.1
 width3 = nn3*0.2 #F3_mag*0.1

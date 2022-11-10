@@ -79,6 +79,8 @@ str5="###  $ \overrightarrow{F_1} + \overrightarrow{F_R} = $" + " {:.4f}".format
 with col2:
     st.markdown(""" 
     
+
+    
     
     ### Vectores de las fuerzas 
     

@@ -56,7 +56,7 @@ ax.axhline(0,color='black') # x = 0
 ax.axvline(0,color='black') # y = 0
 
 #ax.annotate("", xy=(0.0,F1x), xytext=(0, 0),arrowprops=dict(arrowstyle="->",color='red',lw=2.5))
-if F1_mag
+#if F1_mag
 ax.arrow(0.,0.,F1x*np.pi/2.0,0.0,width=width_l,color='purple',length_includes_head=True,animated=True,head_width=head_w)
 ax.arrow(0.,0.,F2x,F2y,width=width_l,color='red',length_includes_head=True,animated=True,head_width=head_w)
 ax.arrow(0.,0.,F3x,F3y,width=width_l,color='blue',length_includes_head=True,animated=True,head_width=head_w)

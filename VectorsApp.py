@@ -37,6 +37,7 @@ FRx = F2x + F3x
 FRy = F2y + F3y
 FR_mag = np.sqrt(FRx*FRx+FRy*FRy)
 FR_theta = mt.atan2(FRy,FRx)
+st.write('++++++++++++++',FR_theta)
 
 fig = plt.figure()
 #ax = fig.add_subplot(111,polar=True)

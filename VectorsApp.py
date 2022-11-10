@@ -69,6 +69,8 @@ with col1:
     ax.grid(True,lw=0.8,linestyle='--')
     st.pyplot(fig)
 
+
+
 with col2:
     st.write(" ")
     st.write(" ")
@@ -77,14 +79,17 @@ with col2:
     st.write(" ")
     st.markdown(""" ### Vectores de las fuerzas 
     
-    
+
     
     
     """)
 
+
+
+
+
     if F1_mag != 0.0:
         st.write(" $ \overrightarrow{F_1} = $ ","{:.4f}".format(F1x),"$ i $")
-        st.markdown(' ## $\phi$ ',F1x)
     if F2_mag !=0.0 and F2_theta != 0.0:    
         st.write(" $ \overrightarrow{F_2} = $ ","{:.4f}".format(F2x),"$ i $"," + ","{:.4f}".format(F2y),"$ j $")
     if F3_mag !=0.0 and F3_theta != 0.0:

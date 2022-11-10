@@ -38,7 +38,7 @@ FR_mag = np.sqrt(FRx*FRx+FRy*FRy)
 
 fig = plt.figure()
 #ax = fig.add_subplot(111,polar=True)
-ax = fig.add_axes([0.0,0.0,1.0,1.0],polar=True,axisbg='#d5de9c')
+ax = fig.add_axes([0.0,0.0,1.0,1.0],polar=True,axisbg='lightgreen')
 #ax.spines['left'].set_position('center')
 #ax.spines['bottom'].set_position('center')
 #fig2 = plt.figure()

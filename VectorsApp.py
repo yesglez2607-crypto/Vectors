@@ -106,17 +106,17 @@ st.pyplot(fig)
 
 
 
-r = np.arange(0, 3.0, 0.01)
-theta = 2*np.pi*r
-ax2.plot(theta, r, color='#ee8d18', lw=3)
-ax2.set_rmax(2.0)
-grid(True)
+#r = np.arange(0, 3.0, 0.01)
+#theta = 2*np.pi*r
+#ax2.plot(theta, r, color='#ee8d18', lw=3)
+#ax2.set_rmax(2.0)
+#grid(True)
 
-ax2.set_title("And there was much rejoicing!", fontsize=20)
+#ax2.set_title("And there was much rejoicing!", fontsize=20)
 #This is the line I added:
-arr = plt.arrow(0, 0.5, 0,1 , alpha = 0.5, width = 0.1,edgecolor = 'black', facecolor = 'green',lw = 2)
+#arr = plt.arrow(0, 0.5, 0,1 , alpha = 0.5, width = 0.1,edgecolor = 'black', facecolor = 'green',lw = 2)
 
-plt.show()
+#plt.show()
 
 
 

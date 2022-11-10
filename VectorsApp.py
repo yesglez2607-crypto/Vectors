@@ -70,7 +70,7 @@ with col1:
     st.pyplot(fig)
 
 
-strh="$ \overrightarrow{F_1} = $" + " {:.4f}".format(F1x)+" $ i $"
+strh="# $ \overrightarrow{F_1} = $" + " {:.4f}".format(F1x)+" $ i $"
 st.write(strh)
 with col2:
     st.write(" ")

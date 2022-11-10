@@ -21,6 +21,7 @@ with st.sidebar:
     # A_theta = st.slider('Dirección del vector A', 0.0, 360.0, 10.0)
     #  B_theta = st.slider('Dirección del vector B', 0.0, 360.0, 45.0)
 
+st.write('--------------------',F1_mag)
 deg2rad = 2.0*np.pi/360.0
 F2_theta_rad = deg2rad*F2_theta
 F3_theta_rad = deg2rad*F3_theta
@@ -55,6 +56,7 @@ ax.axhline(0,color='black') # x = 0
 ax.axvline(0,color='black') # y = 0
 
 #ax.annotate("", xy=(0.0,F1x), xytext=(0, 0),arrowprops=dict(arrowstyle="->",color='red',lw=2.5))
+if F1_mag
 ax.arrow(0.,0.,F1x*np.pi/2.0,0.0,width=width_l,color='purple',length_includes_head=True,animated=True,head_width=head_w)
 ax.arrow(0.,0.,F2x,F2y,width=width_l,color='red',length_includes_head=True,animated=True,head_width=head_w)
 ax.arrow(0.,0.,F3x,F3y,width=width_l,color='blue',length_includes_head=True,animated=True,head_width=head_w)

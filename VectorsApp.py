@@ -73,6 +73,10 @@ with col1:
     st.pyplot(fig)
 
 with col2:
+    st.write(" ")
+    st.write(" ")
+    st.write(" ")
+    st.write(" ")
     if F1_mag != 0.0:
         st.write(" $ \overrightarrow{F_1} = $ ","{:.4f}".format(F1x),"$ i $")
     if F2_mag !=0.0 and F2_theta != 0.0:    

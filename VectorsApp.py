@@ -78,7 +78,7 @@ head_l3=F3_mag*0.2
 head_l4=FR_mag*0.2
 
 col1, col2 = st.columns(2)
-
+ax.grid(True,lw=0.8,linestyle='--')
 with col1:
     if F1_mag != 0.0:
         ax.arrow(0.0,0.0,0.0,F1_mag,width=width1,edgecolor = 'black', facecolor = 'darkgreen',length_includes_head=True,animated=True,head_width=head_w,head_length=head_l1,lw=2.0)
@@ -88,7 +88,7 @@ with col1:
         ax.arrow(F3_theta*np.pi/180.0,0.0,0.0,F3_mag,width=width1,edgecolor = 'black', facecolor = 'blue',length_includes_head=True,animated=True,head_width=head_w,head_length=head_l3,lw=2.0)
         ax.arrow(FR_theta,0.0,0.0,FR_mag,width=width1,edgecolor = 'black', facecolor = 'darkorange',length_includes_head=True,animated=True,head_width=head_w,head_length=head_l4,lw=2.0) 
 
-    ax.grid(True,lw=0.8,linestyle='--')
+
     st.pyplot(fig)
 
 

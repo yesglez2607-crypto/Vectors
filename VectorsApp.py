@@ -92,7 +92,8 @@ with col1:
     st.pyplot(fig)
 
 
-str1='<p style= "font-family:sans-serif; color:Green; font-size: 42px;">' + '"#### $ \overrightarrow{F_1} = $ " + " {:.4f}".format(F1x) + " $ i $ "' + '</p>'
+str1="#### $ \overrightarrow{F_1} = $ " + " {:.4f}".format(F1x) + " $ i $   </font>"
+strr = '<p style="font-family:sans-serif; color:Green; font-size: 42px;">' + str1 + '</p>'
 str2="#### $ \overrightarrow{F_2} = $ " + " {:.4f}".format(F2x) + " $ i $" + " + " + " {:.4f}".format(F2y) + " $ j $"
 str3="#### $ \overrightarrow{F_3} = $ " + " {:.4f}".format(F3x) + " $ i $" + " + " + " {:.4f}".format(F3y) + " $ j $"
 str4="#### $ \overrightarrow{F_R} = \overrightarrow{F_2} + \overrightarrow{F_3} = $ " + " {:.4f}".format(FRx) + " $ i $" + " + " + " {:.4f}".format(FRy) + " $ j $"
@@ -113,7 +114,7 @@ with col2:
     """)
 
     if F1_mag != 0.0:
-        st.markdown(str1)
+        st.markdown(strr)
     if F2_mag !=0.0 and F2_theta != 0.0: 
         st.markdown(str2)   
     if F3_mag !=0.0 and F3_theta != 0.0:

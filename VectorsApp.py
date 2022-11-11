@@ -114,7 +114,7 @@ with col2:
     """)
 
     if F1_mag != 0.0:
-        st.markdown(strr)
+        st.markdown(strr, unsafe_allow_html=True)
     if F2_mag !=0.0 and F2_theta != 0.0: 
         st.markdown(str2)   
     if F3_mag !=0.0 and F3_theta != 0.0:

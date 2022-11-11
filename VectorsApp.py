@@ -114,6 +114,8 @@ with col2:
     """)
 
     if F1_mag != 0.0:
+        str1="#### $ \overrightarrow{F_1} = $ " + " {:.4f}".format(F1x) + " $ i $   </font>"
+        strr = '<p style="font-family:sans-serif; color:Green; font-size: 42px;">' + str1 + '</p>'
         st.markdown(strr, unsafe_allow_html=True)
     if F2_mag !=0.0 and F2_theta != 0.0: 
         st.markdown(str2)   

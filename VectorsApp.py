@@ -78,7 +78,7 @@ head_l3=F3_mag*0.2
 head_l4=FR_mag*0.2
 
 col1, col2 = st.columns(2)
-ax.grid(True,lw=0.8,linestyle='--')
+ax.grid(True,lw=0.8,linestyle='--',zorder=0)
 with col1:
     if F1_mag != 0.0:
         ax.arrow(0.0,0.0,0.0,F1_mag,width=width1,edgecolor = 'black', facecolor = 'darkgreen',length_includes_head=True,animated=True,head_width=head_w,head_length=head_l1,lw=2.0)

@@ -62,7 +62,7 @@ nn3=1.0
 nn1 = max(F1_mag,F2_mag)
 nn2 = max(F3_mag,FR_mag)
 nn3=max(nn1,nn2)
-ax.set_facecolor('ivory')
+ax.set_facecolor('azure')
 
 if nn3 != 0.0:
     F1_mag=F1_mag/nn3

@@ -92,7 +92,7 @@ with col1:
     st.pyplot(fig)
 
 
-str1="#### $ \overrightarrow{F_1} = $ " + " {:.4f}".format(F1x) + " $ i $"
+str1="<font color='green'> #### $ \overrightarrow{F_1} = $ " + " {:.4f}".format(F1x) + " $ i $   </font>"
 str2="#### $ \overrightarrow{F_2} = $ " + " {:.4f}".format(F2x) + " $ i $" + " + " + " {:.4f}".format(F2y) + " $ j $"
 str3="#### $ \overrightarrow{F_3} = $ " + " {:.4f}".format(F3x) + " $ i $" + " + " + " {:.4f}".format(F3y) + " $ j $"
 str4="#### $ \overrightarrow{F_R} = \overrightarrow{F_2} + \overrightarrow{F_3} = $ " + " {:.4f}".format(FRx) + " $ i $" + " + " + " {:.4f}".format(FRy) + " $ j $"

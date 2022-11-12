@@ -91,6 +91,15 @@ with col1:
 
     st.pyplot(fig)
 
+    btn = st.download_button(
+            label="Guardar imagen",
+            data=file,
+            file_name="imagen.png",
+            mime="image/png"
+          )
+    if btn == True:
+        plt.savefig('imagen.png')
+
 
 str1="#### $ \overrightarrow{F_1} = $ " + " {:.4f}".format(F1x) + " $ i $"
 strr = '<p style="font-family:sans-serif; color:Green; font-size: 42px;">' + str1 + '</p>'

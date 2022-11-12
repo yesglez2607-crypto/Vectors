@@ -96,11 +96,13 @@ with col1:
     if F2_mag !=0.0 and F2_theta != 0.0:    
         ax.arrow(F2_theta*np.pi/180.0,0.0,0.0,F2_mag,width=width1,edgecolor = 'black', facecolor = 'red',length_includes_head=True,animated=True,head_width=head_w,head_length=head_l2,lw=2.0,zorder=4)
         ax.text(-1.7,1.454,r'$ \overrightarrow{F_2} $',fontsize = 25.0, color='red',fontstyle='oblique',fontfamily='fantasy',zorder=7,transform=IdentityTransform()) 
+        ax.text(-1.7,1.454,r'$ \overrightarrow{F_2} $',fontsize = 25.0, color='red',fontstyle='oblique',fontfamily='fantasy',zorder=7) 
     if F3_mag !=0.0 and F3_theta != 0.0:
         ax.arrow(F3_theta*np.pi/180.0,0.0,0.0,F3_mag,width=width1,edgecolor = 'black', facecolor = 'blue',length_includes_head=True,animated=True,head_width=head_w,head_length=head_l3,lw=2.0,zorder=5)
         ax.arrow(FR_theta,0.0,0.0,FR_mag,width=width1,edgecolor = 'black', facecolor = 'darkorange',length_includes_head=True,animated=True,head_width=head_w,head_length=head_l4,lw=2.0,zorder=6) 
-        ax.text(-1.54,1.442,r'$ \overrightarrow{F_3} $',fontsize = 25.0, color='blue',fontstyle='oblique',fontfamily='fantasy',zorder=7,transform=IdentityTransform()) 
-        ax.text(-1.38,1.465,r'$ \overrightarrow{F_R} $',fontsize = 25.0, color='darkorange',fontstyle='oblique',fontfamily='fantasy',zorder=7,transform=IdentityTransform()) 
+        ax.text(-1.54,1.442,r'$ \overrightarrow{F_3} $',fontsize = 25.0, color='blue',fontstyle='oblique',fontfamily='fantasy',zorder=7) 
+        ax.text(-1.38,1.465,r'$ \overrightarrow{F_R} $',fontsize = 25.0, color='darkorange',fontstyle='oblique',fontfamily='fantasy',zorder=7) 
+        ax.text(300,0,r'$ \overrightarrow{F_3} $',fontsize = 25.0, color='blue',fontstyle='oblique',fontfamily='fantasy',zorder=7,transform=IdentityTransform())
         ax.text(400,0,r'$ \overrightarrow{F_R} $',fontsize = 25.0, color='darkorange',fontstyle='oblique',fontfamily='fantasy',zorder=7,transform=IdentityTransform()) 
     st.pyplot(fig)
     plt.savefig('plot.png')

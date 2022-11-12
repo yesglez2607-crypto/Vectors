@@ -91,14 +91,16 @@ with col1:
 
     st.pyplot(fig)
     #file = None
-    
 
+    with open("plot.png", "rb") as file:
     btn = st.download_button(
-            label="Guardar imagen",
-            data='plot.png',
+            label="Descargar imagen",
+            data=file,
             file_name="imagen.png",
             mime="image/png"
           )
+
+
     if btn == True:
         plt.savefig('plot.png')
         st.image('plot.png')

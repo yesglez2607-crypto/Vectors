@@ -71,6 +71,14 @@ if nn3 != 0.0:
     F2_mag=F2_mag/nn3
     F3_mag=F3_mag/nn3
     FR_mag=FR_mag/nn3
+    
+F1x = F1_mag
+F2x = F2_mag*np.cos(F2_theta_rad)
+F2y = F2_mag*np.sin(F2_theta_rad)
+F3x = F3_mag*np.cos(F3_theta_rad)
+F3y = F3_mag*np.sin(F3_theta_rad)
+
+
 
 width1 =  0.2 #min(min(min(F1_mag,F2_mag),F3_mag),FR_mag)
 head_w=width1*1.8

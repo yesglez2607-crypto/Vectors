@@ -101,7 +101,8 @@ with col1:
             file_name=None,
             mime="image/png"
           )
-        os.system("rm *.png") 
+        if btn:  
+         os.system("rm *.png") 
 
 
 

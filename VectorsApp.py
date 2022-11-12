@@ -114,12 +114,12 @@ with col1:
 #    if btn == True:
       #  plt.savefig('plot.png')
 
-str1="#### $ \overrightarrow{F_1} = $ " + " {:.4f}".format(F1x) + " $ i $"
+str1="#### $ \overrightarrow{F_1} = $ " + " {:.3f}".format(F1x) + " $ i $"
 strr = '<p style="font-family:sans-serif; color:Green; font-size: 42px;">' + str1 + '</p>'
-str2="#### $ \overrightarrow{F_2} = $ " + " {:.4f}".format(F2x) + " $ i $" + " + " + " {:.4f}".format(F2y) + " $ j $"
-str3="#### $ \overrightarrow{F_3} = $ " + " {:.4f}".format(F3x) + " $ i $" + " + " + " {:.4f}".format(F3y) + " $ j $"
-str4="#### $ \overrightarrow{F_R} = \overrightarrow{F_2} + \overrightarrow{F_3} = $ " + " {:.4f}".format(FRx) + " $ i $" + " + " + " {:.4f}".format(FRy) + " $ j $"
-str5="#### $ \overrightarrow{F_1} + \overrightarrow{F_R} = $" + " {:.4f}".format(FRx+F1x) + " $ i $" + " + " + " {:.4f}".format(FRy) + " $ j $ "
+str2="#### $ \overrightarrow{F_2} = $ " + " {:.3f}".format(F2x) + " $ i $" + " + " + " {:.3f}".format(F2y) + " $ j $"
+str3="#### $ \overrightarrow{F_3} = $ " + " {:.3f}".format(F3x) + " $ i $" + " + " + " {:.3f}".format(F3y) + " $ j $"
+str4="#### $ \overrightarrow{F_R} = \overrightarrow{F_2} + \overrightarrow{F_3} = $ " + " {:.3f}".format(FRx) + " $ i $" + " + " + " {:.3f}".format(FRy) + " $ j $"
+str5="#### $ \overrightarrow{F_1} + \overrightarrow{F_R} = $" + " {:.3f}".format(FRx+F1x) + " $ i $" + " + " + " {:.3f}".format(FRy) + " $ j $ "
 
 with col2:
     st.write('    ')

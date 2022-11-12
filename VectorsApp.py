@@ -72,11 +72,11 @@ if nn3 != 0.0:
     F3_mag=F3_mag/nn3
     FR_mag=FR_mag/nn3
 
-F1x = F1_mag
-F2x = F2_mag*np.cos(F2_theta_rad)
-F2y = F2_mag*np.sin(F2_theta_rad)
-F3x = F3_mag*np.cos(F3_theta_rad)
-F3y = F3_mag*np.sin(F3_theta_rad)
+#F1x = F1_mag
+#F2x = F2_mag*np.cos(F2_theta_rad)
+#F2y = F2_mag*np.sin(F2_theta_rad)
+#F3x = F3_mag*np.cos(F3_theta_rad)
+#F3y = F3_mag*np.sin(F3_theta_rad)
 
 width1 =  0.2 #min(min(min(F1_mag,F2_mag),F3_mag),FR_mag)
 head_w=width1*1.8
@@ -93,7 +93,7 @@ with col1:
         ax.text(0.1,1.1,r'$ \overrightarrow{F_1} $',fontsize = 25.0, color='darkgreen',fontstyle='oblique',fontfamily='fantasy')  
     if F2_mag !=0.0 and F2_theta != 0.0:    
         ax.arrow(F2_theta*np.pi/180.0,0.0,0.0,F2_mag,width=width1,edgecolor = 'black', facecolor = 'red',length_includes_head=True,animated=True,head_width=head_w,head_length=head_l2,lw=2.0,zorder=4)
-        ax.text(F2x,F2y,r'$ \overrightarrow{F_2} $',fontsize = 25.0, color='red',fontstyle='oblique',fontfamily='fantasy') 
+        ax.text(F2x/nn3,F2y/nn3,r'$ \overrightarrow{F_2} $',fontsize = 25.0, color='red',fontstyle='oblique',fontfamily='fantasy') 
     if F3_mag !=0.0 and F3_theta != 0.0:
         ax.arrow(F3_theta*np.pi/180.0,0.0,0.0,F3_mag,width=width1,edgecolor = 'black', facecolor = 'blue',length_includes_head=True,animated=True,head_width=head_w,head_length=head_l3,lw=2.0,zorder=5)
         ax.arrow(FR_theta,0.0,0.0,FR_mag,width=width1,edgecolor = 'black', facecolor = 'darkorange',length_includes_head=True,animated=True,head_width=head_w,head_length=head_l4,lw=2.0,zorder=6) 

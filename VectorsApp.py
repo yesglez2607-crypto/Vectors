@@ -103,8 +103,6 @@ with col1:
     st.pyplot(fig)
 
 
-
-
 #    if btn == True:
       #  plt.savefig('plot.png')
 

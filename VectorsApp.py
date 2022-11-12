@@ -93,8 +93,6 @@ with col1:
     #file = None
 
     with open("plot.png", "rb") as file:
-        namef = st.text_input('Nombre de la imagen a guardar:', 'imagen.png')
-        fname = namef+'.png'
         btn = st.download_button(
             label="Descargar imagen",
             data=file,
@@ -105,6 +103,8 @@ with col1:
 
     if btn == True:
         plt.savefig('plot.png')
+        namef = st.text_input('Nombre de la imagen a guardar:', 'imagen.png')
+        fname = namef+'.png'
 
 
 str1="#### $ \overrightarrow{F_1} = $ " + " {:.4f}".format(F1x) + " $ i $"

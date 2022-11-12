@@ -90,10 +90,10 @@ ax.grid(True,lw=0.8,linestyle='--',zorder=0)
 with col1:
     if F1_mag != 0.0:
         ax.arrow(0.0,0.0,0.0,F1_mag,width=width1,edgecolor = 'black', facecolor = 'darkgreen',length_includes_head=True,animated=True,head_width=head_w,head_length=head_l1,lw=2.0,zorder=3)
-        ax.text(-1.85,0.6,r'$ \overrightarrow{F_1} $',fontsize = 25.0, color='darkgreen',fontstyle='oblique',fontfamily='fantasy')  
+        ax.text(-1.85,0.2,r'$ \overrightarrow{F_1} $',fontsize = 25.0, color='darkgreen',fontstyle='oblique',fontfamily='fantasy')  
     if F2_mag !=0.0 and F2_theta != 0.0:    
         ax.arrow(F2_theta*np.pi/180.0,0.0,0.0,F2_mag,width=width1,edgecolor = 'black', facecolor = 'red',length_includes_head=True,animated=True,head_width=head_w,head_length=head_l2,lw=2.0,zorder=4)
-        ax.text(-1.5,0.6,r'$ \overrightarrow{F_2} $',fontsize = 25.0, color='red',fontstyle='oblique',fontfamily='fantasy') 
+        ax.text(-1.5,0.2,r'$ \overrightarrow{F_2} $',fontsize = 25.0, color='red',fontstyle='oblique',fontfamily='fantasy') 
     if F3_mag !=0.0 and F3_theta != 0.0:
         ax.arrow(F3_theta*np.pi/180.0,0.0,0.0,F3_mag,width=width1,edgecolor = 'black', facecolor = 'blue',length_includes_head=True,animated=True,head_width=head_w,head_length=head_l3,lw=2.0,zorder=5)
         ax.arrow(FR_theta,0.0,0.0,FR_mag,width=width1,edgecolor = 'black', facecolor = 'darkorange',length_includes_head=True,animated=True,head_width=head_w,head_length=head_l4,lw=2.0,zorder=6) 

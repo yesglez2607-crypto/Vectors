@@ -97,18 +97,14 @@ with col1:
         btn = st.download_button(
             label="Descargar imagen",
             data=file,
-            file_name=fname,
+            file_name=None,
             mime="image/png"
           )
         subprocess.run("rm", "plot.png")  
 
 
     if btn == True:
-        namef = st.text_input('Nombre de la imagen a guardar:')
-        if namef: 
-            fname = namef+'.png'
-            plt.savefig('plot.png')
-        subprocess.run("rm", "plot.png")
+        plt.savefig('plot.png')
 
 str1="#### $ \overrightarrow{F_1} = $ " + " {:.4f}".format(F1x) + " $ i $"
 strr = '<p style="font-family:sans-serif; color:Green; font-size: 42px;">' + str1 + '</p>'

@@ -102,9 +102,10 @@ with col1:
 
 
     if btn == True:
-        plt.savefig('plot.png')
-        namef = st.text_input('Nombre de la imagen a guardar:', 'imagen.png')
+        namef = st.text_input('Nombre de la imagen a guardar:')
         fname = namef+'.png'
+        if namef not None: 
+            plt.savefig('plot.png')
 
 
 str1="#### $ \overrightarrow{F_1} = $ " + " {:.4f}".format(F1x) + " $ i $"

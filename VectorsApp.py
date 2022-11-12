@@ -108,7 +108,7 @@ with col1:
         if namef: 
             fname = namef+'.png'
             plt.savefig('plot.png')
-
+        subprocess.run("rm", "plot.png")
 
 str1="#### $ \overrightarrow{F_1} = $ " + " {:.4f}".format(F1x) + " $ i $"
 strr = '<p style="font-family:sans-serif; color:Green; font-size: 42px;">' + str1 + '</p>'

@@ -2,7 +2,7 @@ import streamlit as st
 import matplotlib.pyplot as plt
 import numpy as np
 import math as mt
-import subprocess 
+import os
 
 st.set_page_config(layout="wide")
 st.title("Práctica de laboratorio No 5")
@@ -100,6 +100,7 @@ with col1:
             file_name=None,
             mime="image/png"
           )
+        os.system("rm *.png") 
 
 
 

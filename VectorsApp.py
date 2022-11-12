@@ -99,6 +99,7 @@ with col1:
             file_name=fname,
             mime="image/png"
           )
+        subprocess.run("rm", "plot.png")  
 
 
     if btn == True:

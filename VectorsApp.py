@@ -91,18 +91,7 @@ with col1:
 
     plt.savefig('plot.png')
     st.pyplot(fig)
-    #plt.savefig('plot.png')
-    fname = None
 
-    with open("plot.png", "rb") as file:
-        btn = st.download_button(
-            label="Descargar imagen",
-            data=file,
-            file_name=None,
-            mime="image/png"
-          )
-        if btn:  
-         os.system("rm *.png") 
 
 
 
@@ -138,3 +127,13 @@ with col2:
         st.markdown(str3)
         st.markdown(str4)
         st.markdown(str5)
+
+with open("plot.png", "rb") as file:
+    btn = st.download_button(
+        label="Descargar imagen",
+        data=file,
+        file_name=None,
+        mime="image/png"
+        )
+    if btn:  
+    os.system("rm *.png") 

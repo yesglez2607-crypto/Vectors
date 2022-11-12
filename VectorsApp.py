@@ -89,8 +89,9 @@ with col1:
         ax.arrow(F3_theta*np.pi/180.0,0.0,0.0,F3_mag,width=width1,edgecolor = 'black', facecolor = 'blue',length_includes_head=True,animated=True,head_width=head_w,head_length=head_l3,lw=2.0,zorder=5)
         ax.arrow(FR_theta,0.0,0.0,FR_mag,width=width1,edgecolor = 'black', facecolor = 'darkorange',length_includes_head=True,animated=True,head_width=head_w,head_length=head_l4,lw=2.0,zorder=6) 
 
-
+    plt.savefig('plot.png')
     st.pyplot(fig)
+    #plt.savefig('plot.png')
     fname = None
 
     with open("plot.png", "rb") as file:
@@ -104,8 +105,8 @@ with col1:
 
 
 
-    if btn == True:
-        plt.savefig('plot.png')
+#    if btn == True:
+      #  plt.savefig('plot.png')
 
 str1="#### $ \overrightarrow{F_1} = $ " + " {:.4f}".format(F1x) + " $ i $"
 strr = '<p style="font-family:sans-serif; color:Green; font-size: 42px;">' + str1 + '</p>'

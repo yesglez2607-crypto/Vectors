@@ -98,7 +98,7 @@ with col1:
             mime="image/png"
           )
     if btn == True:
-        plt.savefig('imagen.png')
+        file=plt.savefig('imagen.png')
 
 
 str1="#### $ \overrightarrow{F_1} = $ " + " {:.4f}".format(F1x) + " $ i $"

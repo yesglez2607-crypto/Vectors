@@ -90,17 +90,17 @@ with col1:
 
 
     st.pyplot(fig)
-    file = None
+    #file = None
     
 
     btn = st.download_button(
             label="Guardar imagen",
-            data=file,
+            data='plot.png',
             file_name="imagen.png",
             mime="image/png"
           )
     if btn == True:
-        file=plt.savefig('imagen.png')
+        plt.savefig('plot.png')
 
 
 str1="#### $ \overrightarrow{F_1} = $ " + " {:.4f}".format(F1x) + " $ i $"

@@ -100,8 +100,9 @@ with col1:
         ax.text(-1.54,1.442,r'$ \overrightarrow{F_3} $',fontsize = 25.0, color='blue',fontstyle='oblique',fontfamily='fantasy',zorder=7) 
         ax.text(-1.38,1.465,r'$ \overrightarrow{F_R} $',fontsize = 25.0, color='darkorange',fontstyle='oblique',fontfamily='fantasy',zorder=7) 
     st.pyplot(fig)
-    
     plt.savefig('plot.png')
+    plt.show()
+    
    # st.pyplot(fig)
 
 

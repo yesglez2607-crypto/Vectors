@@ -136,4 +136,4 @@ with open("plot.png", "rb") as file:
         mime="image/png"
         )
     if btn:  
-    os.system("rm *.png") 
+        os.system("rm *.png") 

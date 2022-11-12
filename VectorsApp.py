@@ -93,7 +93,7 @@ with col1:
     #file = None
 
     with open("plot.png", "rb") as file:
-    btn = st.download_button(
+        btn = st.download_button(
             label="Descargar imagen",
             data=file,
             file_name="imagen.png",

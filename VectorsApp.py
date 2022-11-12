@@ -101,6 +101,7 @@ with col1:
           )
     if btn == True:
         plt.savefig('plot.png')
+        st.image('plot.png')
 
 
 str1="#### $ \overrightarrow{F_1} = $ " + " {:.4f}".format(F1x) + " $ i $"

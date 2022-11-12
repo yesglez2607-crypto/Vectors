@@ -97,7 +97,7 @@ with col1:
     if F3_mag !=0.0 and F3_theta != 0.0:
         ax.arrow(F3_theta*np.pi/180.0,0.0,0.0,F3_mag,width=width1,edgecolor = 'black', facecolor = 'blue',length_includes_head=True,animated=True,head_width=head_w,head_length=head_l3,lw=2.0,zorder=5)
         ax.arrow(FR_theta,0.0,0.0,FR_mag,width=width1,edgecolor = 'black', facecolor = 'darkorange',length_includes_head=True,animated=True,head_width=head_w,head_length=head_l4,lw=2.0,zorder=6) 
-        ax.text(-1.54,1.444,r'$ \overrightarrow{F_3} $',fontsize = 25.0, color='blue',fontstyle='oblique',fontfamily='fantasy') 
+        ax.text(-1.54,1.442,r'$ \overrightarrow{F_3} $',fontsize = 25.0, color='blue',fontstyle='oblique',fontfamily='fantasy') 
     plt.savefig('plot.png')
     st.pyplot(fig)
 

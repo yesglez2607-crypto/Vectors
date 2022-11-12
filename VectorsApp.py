@@ -55,7 +55,7 @@ FR_mag = np.sqrt(FRx*FRx+FRy*FRy)
 FR_theta = mt.atan2(FRy,FRx)
 
 fig = plt.figure(figsize=(5, 5), dpi=300)
-ax = fig.add_axes([0.25,0.052,0.8,0.87],polar=True)
+ax = fig.add_axes([0.25,0.052,0.6,0.87],polar=True)
 
 plt.rc('grid', color='#316931', linewidth=2, linestyle='-')
 plt.rc('xtick', labelsize=12)  

@@ -103,8 +103,8 @@ with col1:
 
     if btn == True:
         namef = st.text_input('Nombre de la imagen a guardar:')
-        fname = namef+'.png'
         if namef: 
+            fname = namef+'.png'
             plt.savefig('plot.png')
 
 

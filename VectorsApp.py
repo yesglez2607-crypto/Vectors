@@ -85,7 +85,7 @@ head_l1=F1_mag*0.2
 head_l2=F2_mag*0.2
 head_l3=F3_mag*0.2
 head_l4=FR_mag*0.2
-fntz = 14.0
+fntz = 18.0
 col1, col2 = st.columns(2)
 ax.grid(True,lw=0.8,linestyle='--',zorder=0)
 with col1:

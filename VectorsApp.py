@@ -42,6 +42,18 @@ deg2rad = 2.0*np.pi/360.0
 F2_theta_rad = deg2rad*F2_theta
 F3_theta_rad = deg2rad*F3_theta
 
+nn3=1.0
+nn1 = max(F1_mag,F2_mag)
+nn2 = max(F3_mag,FR_mag)
+nn3=max(nn1,nn2)
+ax.set_facecolor('azure')
+
+if nn3 != 0.0:
+    F1_mag=F1_mag/nn3
+    F2_mag=F2_mag/nn3
+    F3_mag=F3_mag/nn3
+#    FR_mag=FR_mag/nn3
+
 F1x = F1_mag
 F2x = F2_mag*np.cos(F2_theta_rad)
 F2y = F2_mag*np.sin(F2_theta_rad)
@@ -59,17 +71,7 @@ ax = fig.add_axes([0.0,0.0,1.0,1.0],polar=True)
 plt.rc('grid', color='#316931', linewidth=2, linestyle='-')
 plt.rc('xtick', labelsize=16)  
 plt.rc('ytick', labelsize=1)
-nn3=1.0
-nn1 = max(F1_mag,F2_mag)
-nn2 = max(F3_mag,FR_mag)
-nn3=max(nn1,nn2)
-ax.set_facecolor('azure')
 
-if nn3 != 0.0:
-    F1_mag=F1_mag/nn3
-    F2_mag=F2_mag/nn3
-    F3_mag=F3_mag/nn3
-    FR_mag=FR_mag/nn3
 
 width1 =  0.2 #min(min(min(F1_mag,F2_mag),F3_mag),FR_mag)
 head_w=width1*1.8

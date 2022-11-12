@@ -85,7 +85,7 @@ with col1:
         ax.arrow(0.0,0.0,0.0,F1_mag,width=width1,edgecolor = 'black', facecolor = 'darkgreen',length_includes_head=True,animated=True,head_width=head_w,head_length=head_l1,lw=2.0,zorder=3)
         ax.text(0.0,F1_mag,F1_mag)  
     if F2_mag !=0.0 and F2_theta != 0.0:    
-        ax.arrow(F2_theta*np.pi/180.0,0.0,0.0,F2_mag,width=width1,edgecolor = 'black', facecolor = 'red',length_includes_head=True,animated=True,head_width=head_w,head_length=head_l2,lw=2.0,zorder=4)
+        ax.arrow(F2_theta*np.pi/180.0,0.0,0.0,'F1',width=width1,edgecolor = 'black', facecolor = 'red',length_includes_head=True,animated=True,head_width=head_w,head_length=head_l2,lw=2.0,zorder=4)
     if F3_mag !=0.0 and F3_theta != 0.0:
         ax.arrow(F3_theta*np.pi/180.0,0.0,0.0,F3_mag,width=width1,edgecolor = 'black', facecolor = 'blue',length_includes_head=True,animated=True,head_width=head_w,head_length=head_l3,lw=2.0,zorder=5)
         ax.arrow(FR_theta,0.0,0.0,FR_mag,width=width1,edgecolor = 'black', facecolor = 'darkorange',length_includes_head=True,animated=True,head_width=head_w,head_length=head_l4,lw=2.0,zorder=6) 

@@ -90,7 +90,7 @@ with col1:
 
 
     st.pyplot(fig)
-    #file = None
+    fname = None
 
     with open("plot.png", "rb") as file:
         btn = st.download_button(
